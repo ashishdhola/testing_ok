@@ -1,0 +1,43 @@
+.img1{
+    width: 400px;
+    height:400px;
+    background-color:blue;
+    object-fit: cover;
+}
+
+.img2{
+    object-fit: fill ;
+}
+
+.img3{
+    object-fit: contain;
+}
+
+.img4{
+    object-fit: scale-down;
+}
+
+
+.image{
+    width: 400px;
+    height:400px;
+    background-color:blue;
+    object-position:0 0;
+}
+
+.image2{
+    width: 400px;
+    height:400px;
+    background-color:blue;
+    object-position:bottom;
+}.image3{
+    width: 400px;
+    height:400px;
+    background-color:blue;
+    object-position:0 0;
+}.image4{
+    width: 400px;
+    height:400px;
+    background-color:blue;
+    object-position:0 0;
+}

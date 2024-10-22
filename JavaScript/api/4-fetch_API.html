@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch-4</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <th>Id</th>
+            <th>employee_name</th>
+            <th>employee_salary</th>
+            <th>employee_age</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script>
+        fetch('https://dummy.restapiexample.com/api/v1/employees').then(res => {
+            res.json().then(data => {
+                data.map((val, index) => {
+                    let tbody = document.getElementById("tbody");
+                    let tr = document.createElement("tr");
+                    tr.innerHTML =
+                        `<td>${val.Id}</td>
+                    <td>${val.employee_name}</td>
+                    <td>${val.employee_salary}</td>
+                    <td>${val.employee_age}</td>`;
+                    tbody.appendChild(tr);
+                });
+                console.log(data);
+            });
+        });
+    </script>
+</body>
+
+</html>

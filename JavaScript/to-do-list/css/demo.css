@@ -1,0 +1,19 @@
+.box{
+    width: 400px;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .box input{
+    display: block;
+} */
+
+.card-wrap{
+    width: 300px;
+    min-height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+
+<body>
+    <h1>Array methods</h1>
+    <h2>push()</h2>
+    <h2>pop()</h2>
+    <h2>indexof()</h2>
+    <h2>includes()</h2>
+    <h2>findindex()</h2>
+    <h2>concat()</h2>
+    <script>
+
+        /*==========push() and pop()================*/
+
+        console.log("orignal");
+        let fruits = ["apple", "banana", "chickoo", "mango"];
+        console.log(fruits);
+
+        console.log("push");
+        fruits.push("strawberry", "kiwi");  // push method adds to end but doesn't return 
+        console.log(fruits);
+
+        console.log("pop");
+        let deletedItem = fruits.pop();  // delete from end and return
+        console.log(fruits);
+
+        console.log("deleted", deletedItem);
+
+        /*==========indexof()================*/
+
+        let arr = [44, 5, 88, 56, 78, 67, 56];
+
+        let result = arr.indexOf(56);
+        console.log(result);
+
+        let b = arr.indexOf(90);  //when it doesn't finds the index in an array it always prints -1. neither it prints undefines nor false.
+        console.log(b);
+
+        /*=============includes()==============*/
+
+        let marks = [45, 68, 98, 34, 78];
+
+        let demo = marks.includes(8);
+        console.log(demo); //always gives the answer in true or false
+
+        console.log(marks.includes(78));
+
+        /*==========findindex()================*/
+        // console.log("findindex");
+        // let num = [44, 58, 56, 78, 67, 56];
+        // console.log(findIndex(56))
+        // let ans = num.findIndex(56);
+        // console.log(ans);
+
+        let d = arr.indexOf(90);  //when it doesn't finds the index in an array it always prints -1. neither it prints undefines nor false.
+        console.log(d);
+
+        /*==========concat()================*/
+        let first = ["hello"];
+        let second = ["world"];
+        let res = first.concat(second);
+        console.log(res);
+
+        console.log(second.concat(first));
+        console.log(second.concat()); 
+
+        // (Merging an Array with Values)
+        let abc  = first.concat("JS"); 
+        console.log(abc);
+
+
+        
+
+
+
+    </script>
+</body>
+
+</html>

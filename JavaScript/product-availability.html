@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product1 = prompt("Enter the name of the first product:");
+        let product2 = prompt("Enter the name of the second product:");
+
+        // Assume we have a variable called `availableProducts` that stores available products (replace with your logic to check availability)
+        let availableProducts = ["shirt", "hat", "shoes"];
+
+        if (availableProducts.includes(product1)) {
+            console.log(product1 + " is available!");
+        } 
+        else if (availableProducts.includes(product2)) {
+            console.log(product2 + " is available!");
+        } 
+        else if (availableProducts.includes(product1) && availableProducts.includes(product2)) {
+            console.log(product1 ,"&&", product2 + " is available!");
+        } 
+        else {
+            console.log("Neither " + product1 + " nor " + product2 + " are currently available.");
+        }
+    
+    </script>
+</body>
+</html>

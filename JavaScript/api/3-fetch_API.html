@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch-3</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <th>Id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>description</th>
+            <th>creationAt</th>
+            <th>updatedAt</th>
+            <th colspan="5">category</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script>
+        fetch('https://api.escuelajs.co/api/v1/products').then((res) => {
+            let tbody = document.getElementById("tbody");
+            res.json().then((response) => {
+                response.map((val, index) => {
+
+                    let tr = document.createElement("tr");
+                    tr.innerHTML =
+                        `<td>${val.id}</td>
+                        <td>${val.title}</td>
+                        <td>${val.price}</td>
+                        <td>${val.description}</td>
+                        <td>${val.creationAt}</td>
+                        <td>${val.updatedAt}</td>
+                        <td>${val.category.id}</td>
+                        <td>${val.category.name}</td>
+                        <td>${val.category.creationAt}</td>
+                        <td>${val.category.updatedAt}</td>`
+                    tbody.appendChild(tr);
+                });
+                console.log(response);
+            });
+        });
+    </script>
+</body>
+
+</html>

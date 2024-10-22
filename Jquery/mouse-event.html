@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse-Event</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium nisi dolor debitis, nihil possimus beatae,
+        voluptatem dignissimos, pariatur voluptas dolore dolorem! Repudiandae deleniti veritatis exercitationem
+        assumenda doloremque, tempora molestias ducimus!</p>
+
+    <h1>Double Click.</h1>
+    <h2>Mouse Enter</h2>
+    <h3>Mouse Leave.</h3>
+
+    <button class="hide">HIDE</button>
+    <button class="show">SHOW</button>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $("p").hide(100);
+            });
+
+            $("h1").dblclick(function () {
+                $("h1").hide(100);
+            });
+
+            $("h2").mouseenter(function () {
+                alert("hi");
+            });
+
+            $("h3").mouseleave(function () {
+                $("h3").hide(100);
+            });
+
+            $(".hide").click(function () {
+                $("p").hide(100);
+                $("h1").hide(100);
+                $("h2").hide(100);
+                $("h3").hide(100);
+            });
+
+            $(".show").click(function () {
+                $("p").show(100);
+                $("h1").show(100);
+                $("h2").show(100);
+                $("h3").show(100);
+            });
+        });
+    </script>
+</body>
+
+</html>

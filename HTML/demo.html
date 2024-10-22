@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let arr = [7, 8, 12, 27, 88];
+        console.log(arr);
+        let size = arr.length;
+        let element = 45;
+        let index = 3;
+
+        function insertion(arr, size, element, index) {
+
+            for (let i = size - 1; i >= index; i--) {
+                arr[i + 1] = arr[i];
+            }
+
+            arr[index] = element;
+            console.log(arr);
+        }
+
+        insertion(arr, size, element, index);
+
+
+    </script>
+</body>
+
+</html>

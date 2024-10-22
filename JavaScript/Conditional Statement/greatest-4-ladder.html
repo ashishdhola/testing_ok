@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greatest-4-ladder</title>
+</head>
+<body>
+  
+  <h1>4. Write a JavaScript program to find which number is greater in 4 numbers using ladder if else.</h1>
+
+  <h2>Enter first number:</h2>
+  <input type="number" id="n1">
+
+  <h2>Enter second number:</h2>
+  <input type="number" id="n2">
+
+  <h2>Enter third number:</h2>
+  <input type="number" id="n3">
+
+  <h2>Enter fourth number:</h2>
+  <input type="number" id="n4">
+    <br><br>
+  <button onclick="getNumber()">Enter number</button>
+
+  <script>
+    function getNumber() {
+      let a = document.getElementById("n1").value;
+      let b = document.getElementById("n2").value;
+      let c = document.getElementById("n3").value;
+      let d = document.getElementById("n4").value;
+    
+    if(a>b && a>c && a>d){
+        alert("First Number is Greatest");
+    }
+    else if(b>c && b>a && b>d){
+        alert("Second Number is Greatest");
+    }
+    else if(c>a && c>b && c>d){
+       alert("Third Number is Greatest");
+    }
+    else{
+        alert("Fourth Number is Greatest");
+    }
+         
+    }
+  </script>
+</body>
+</html>

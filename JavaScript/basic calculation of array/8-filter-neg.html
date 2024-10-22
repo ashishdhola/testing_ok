@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter-negative</title>
+</head>
+
+<body>
+    <h2>8.Write a javascript program to find all negative elements(using array filter method).</h2>
+    <script>
+        let num = [45, -58, 55, -7, 46, -35];
+        console.log(num);
+
+        let neg = num.filter((val) => {
+            if (val < 0) {
+                console.log(val);
+            }
+        });
+
+    </script>
+</body>
+
+</html>

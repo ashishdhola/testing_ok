@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>max-4</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("Enter first number"));
+        let b = parseInt(prompt("Enter second number"));
+        let c = parseInt(prompt("Enter third number"));
+        let d = parseInt(prompt("Enter fourth number"));
+
+        console.log("A :",a);
+        console.log("B :",b);
+        console.log("C :",c);
+        console.log("D :",d);
+
+        if (a > b) {
+            if (a > b) {
+                if (a > c) {
+                    if (a > d) {
+                        console.log("A is maximum");
+                    }
+                    else {
+                        console.log("D is maximum");
+                    }
+                }
+                else {
+                    if (c > d) {
+                        console.log("C is maximum");
+                    }
+                    else {
+                        console.log("D is maximum");
+                    }
+                }
+            }
+            else {
+                if (b > c) {
+                    if (b > d) {
+                        console.log("B is maximum");
+                    }
+                    else {
+                        console.log("D is maximum");
+                    }
+                }
+                else {
+                    if (c > d) {
+                        console.log("C is maximum");
+                    }
+                    else {
+                        console.log("D is maximum");
+                    }
+                }
+            }
+        }
+        else {
+            if (b > c) {
+                if (b > d) {
+                    console.log("B is maximum");
+                }
+                else {
+                    console.log("D is maximum");
+                }
+            }
+            else {
+                if (c > d) {
+                    console.log("C is maximum");
+                }
+                else {
+                    console.log("D is maximum");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

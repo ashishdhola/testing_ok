@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Years-of-Service</title>
+</head>
+
+<body>
+    <h2>4. Write a Javascript program to create a class called "Employee" with a name, salary, and hire date
+        attributes,and a method to calculate years of service.</h2>
+
+    <script>
+        class Employee {
+            constructor(name, salary, hireDate) {
+                this.name = name;
+                this.salary = salary;
+                this.hireDate = hireDate;
+            }
+
+            calculateYearsOfService() {
+                let today = new Date();
+                let years = today.getFullYear() - this.hireDate.getFullYear();
+
+                // Check if employee anniversary has passed in the current year
+                if (today.getMonth() < this.hireDate.getMonth() ||
+                    (today.getMonth() === this.hireDate.getMonth() && today.getDate() < this.hireDate.getDate())) {
+                    years--;
+                }
+                return years;
+            }
+        }
+
+        // Example usage
+        const employee1 = new Employee("John Doe", 50000, new Date(2020, 5, 1)); // June 1, 2020
+        const yearsOfService = employee1.calculateYearsOfService();
+
+        console.log(`${employee1.name} has ${yearsOfService} years of service.`);
+
+    </script>
+
+</body>
+
+</html>

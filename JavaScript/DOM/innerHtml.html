@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>DOM Manipulation Properties</h1>
+    <h2>tagName</h2>
+    <h2>innerHtml</h2>
+    <h2>innerText</h2>
+    <h2>textContent</h2>
+
+    <h3>Fruits</h3>
+    <ul>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Litchi</li>
+        <li>Watermelon</li>
+    </ul>
+
+    <p><i>Welcome to Javascript</i></p>
+
+    <div>Hello World</div>
+
+    <h4 style="visibility: hidden;">abcdefghijk</h4>
+
+    <h6 style="font-size: 30px;">Hello</h6>
+
+    <script>
+        let tag = document.querySelector("h1");
+        console.log(tag);
+        console.log(tag.tagName);
+
+        let fruits = document.querySelector("ul");
+        console.log(fruits);
+        console.log(`innerHTML ${fruits.innerHTML}`);
+        console.log(`innerText ${fruits.innerText}`);
+
+        let p = document.querySelector("p");
+        console.log(p.innerHTML);
+
+        let div = document.querySelector("div");
+        console.log(div.innerText);
+
+        let h4 = document.querySelector("h4");
+        console.log(h4);
+        console.log(h4.innerHTML);
+        console.log(h4.innerText);
+        console.log(h4.textContent);
+
+        let h6 = document.querySelector("h6");
+        console.log(h6);
+        console.dir(h6);
+        // h6.innerHTML = h6.innerHTML + "World";
+        // h6.innerText = h6.innerText + "World";
+        h6.innerHTML = h6.innerText + "World";
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min-max</title>
+    <link rel="stylesheet" href="css/min-max.css">
+</head>
+<body>
+    <!-- -------------------MIN HEIGHT------------------------>
+    <h2>min-height</h2>
+    <div class="min-height"></div> 
+    <p> <mark> when no text is given min-height whatever is given is applied</mark></p>
+
+    <h2>min-height1</h2>
+    <div class="min-height1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, harum quidem suscipit voluptates, reiciendis natus fuga voluptatibus quae maxime repellat quod eaque? Rerum, soluta consequuntur ratione repudiandae recusandae a reprehenderit.</div>
+    <p><mark>when the text given is less (i.e. the text is limited to be fit inside the box) the min height is applied though the text length is less</mark></p>
+
+    <h2>min-height2</h2>
+    <div class="min-height2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis quas quis, eveniet at, quibusdam iure vel modi a dignissimos perferendis voluptas, adipisci voluptatibus qui quidem ad esse voluptates temporibus autem tenetur corporis blanditiis nam cupiditate incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro enim aspernatur aliquam illo voluptas, vero qui dolorum alias necessitatibus quo maxime esse magni non quos atque quia nobis est dolore.</div>
+    <p><mark>when more text is applied the box expands as we have given min-height not max-height. So is has no limit.</mark></p>
+
+    <h2>min-height3</h2>
+    <div class="min-height2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis quas quis, eveniet at, quibusdam iure vel modi a dignissimos perferendis voluptas, adipisci voluptatibus qui quidem ad esse voluptates temporibus autem tenetur corporis blanditiis nam cupiditate incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro enim aspernatur aliquam illo voluptas, vero qui dolorum alias necessitatibus quo maxime esse magni non quos atque quia nobis est dolore. lorem100</div>
+    <p><mark>In min-height overflow:auto doesn't works because the box automatically expands as we expand the text</mark></p>
+
+    <p class="note"><mark>NOTE: WHEN IN MIN-HEIGHT WE MENTION ONLY MIN-HEIGHT PROPERTY AND DON'T MENTION ANY WIDTH IT WILL TAKE THE WHOLE (100%) WIDTH </mark></p>
+    <hr>
+<!-- ------------------------MAX HEIGHT------------------------- -->
+    <h2>max-height</h2>
+    <div class="max-height"></div> 
+    <p> <mark> when no text is given max-height is not applied bcoz as you are given a maximum height i.e. maximum limit you can use but when you are not writing any text i.e. you are using 0 height </mark></p>
+
+    <h2>max-height1</h2>
+    <div class="max-height1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+    <p><mark> when the text given is less the max height is applied according to how much text we use i.e. the height of the text is applied</mark></p>
+
+    <h2>max-height2</h2>
+    <div class="max-height2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis quas quis, eveniet at, quibusdam iure vel modi a dignissimos perferendis voluptas, adipisci voluptatibus qui quidem ad esse voluptates temporibus autem tenetur corporis blanditiis nam cupiditate incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse magni tempore illum dicta, dignissimos voluptatem nam numquam. Voluptatibus, dolorum.</div>
+    <p><mark>when more text is applied the box doesn't expands as we have given max-height. So it's limit is over.</mark></p>
+
+    <h2>max-height3</h2>
+    <div class="max-height3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis quas quis, eveniet at, quibusdam iure vel modi a dignissimos perferendis voluptas, adipisci voluptatibus qui quidem ad esse voluptates temporibus autem tenetur corporis blanditiis nam cupiditate incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro enim aspernatur aliquam illo voluptas, vero qui dolorum alias necessitatibus quo maxime esse magni non quos atque quia nobis est dolore. lorem100</div>
+    <p><mark>In max-height overflow:auto works</mark></p>
+
+    <p class="note"><mark>NOTE: WHEN WE MENTION ONLY MAX-HEIGHT PROPERTY AND DON'T MENTION ANY WIDTH IT WILL TAKE THE WHOLE (100%) WIDTH </mark></p>
+    <hr>
+
+    <!-- ---------------------MIN WIDTH----------------------->
+    <h2>min-width</h2>
+    <div class="min-width"></div> 
+    <p> <mark> when no text is given min-width is applied to 100% i.e. it takes the whole width (the min-width you apply doesn't work) </mark></p>
+
+    <h2>min-width1</h2>
+    <div class="min-width1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.hi </div>
+    <p><mark> when the text is given, then also it takes the whole width (the min-width you apply doesn't work)</mark></p>
+
+    <h2>min-width2</h2>
+    <div class="min-width2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis quas quis, eveniet at, quibusdam iure vel modi a dignissimos perferendis voluptas, adipisci voluptatibus qui quidem ad esse voluptates temporibus autem tenetur corporis blanditiis nam cupiditate incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro enim aspernatur aliquam illo voluptas, vero qui dolorum alias necessitatibus quo maxime esse magni non quos atque quia nobis est dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut consequuntur quas alias tempora harum fugiat corporis accusamus? Nulla ea sequi corrupti distinctio repudiandae rerum ducimus aliquam, provident vitae at aut quam eaque dolore libero nesciunt quis alias recusandae optio possimus voluptatum molestiae! Expedita velit quos odit voluptatibus veritatis maxime deleniti doloremque assumenda dicta necessitatibus quaerat repellendus recusandae culpa excepturi praesentium temporibus eligendi ea dignissimos ut nisi, voluptatem nihil debitis facere! Doloribus a repellendus totam nisi, corporis ut modi ullam quod nam provident earum vero molestiae, enim dignissimos similique maxime inventore. Tempora obcaecati, blanditiis a veritatis ducimus ipsum labore odio doloremque necessitatibus, officiis voluptates unde quisquam quaerat perspiciatis aliquam animi eligendi! Vel eos nemo iste unde ratione asperiores corporis,  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquam, ad in quis fugiat, repellat illo, placeat laborum reiciendis quam veniam repellendus magni corrupti a impedit atque eveniet hic. Culpa?</div>
+    <p><mark>when more text is applied the box doesn't expands.
+    </mark></p>
+
+    <h2>min-width3</h2>
+    <div class="min-width3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis quas quis, eveniet at, quibusdam iure vel modi a dignissimos perferendis voluptas, adipisci voluptatibus qui quidem ad esse voluptates temporibus autem tenetur corporis blanditiis nam cupiditate incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro enim aspernatur aliquam illo voluptas, vero qui dolorum alias necessitatibus quo maxime esse magni non quos atque quia nobis est dolore. lorem100 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis quas quis, eveniet at, quibusdam iure vel modi a dignissimos perferendis voluptas, adipisci voluptatibus qui quidem ad esse voluptates temporibus autem tenetur corporis blanditiis nam cupiditate incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro enim aspernatur aliquam illo voluptas, vero qui dolorum alias necessitatibus quo maxime esse magni non quos atque quia nobis est dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut consequuntur quas alias tempora harum fugiat corporis accusamus? Nulla ea sequi corrupti distinctio repudiandae rerum ducimus aliquam, provident vitae at aut quam eaque dolore libero nesciunt quis alias recusandae optio possimus voluptatum molestiae! Expedita velit quos odit voluptatibus veritatis maxime deleniti doloremque assumenda dicta necessitatibus quaerat repellendus recusandae culpa excepturi praesentium temporibus eligendi ea dignissimos ut nisi, voluptatem nihil debitis facere! Doloribus a repellendus totam nisi, corporis ut modi ullam quod nam provident earum vero molestiae, enim dignissimos similique maxime inventore. Tempora obcaecati, blanditiis a veritatis ducimus ipsum labore odio doloremque necessitatibus, officiis voluptates unde quisquam quaerat perspiciatis aliquam animi eligendi! Vel eos nemo iste unde ratione asperiores corporis, officia debitis accusamus molestias quod odit soluta saepe nam molestiae magni et nostrum omnis ducimus non voluptate adipisci at perferendis. Aspernatur incidunt quam eligendi ad sequi. Quasi doloremque magnam nihil illum praesentium eveniet expedita velit nostrum sed sequi, animi, quaerat ea suscipit asperiores placeat fugit at officiis soluta. Voluptas rem dolore ex, laboriosam, non commodi repellat quis, perspiciatis blanditiis quasi sapiente. Pariatur blanditiis delectus magnam soluta ipsam? Nisi optio eius omnis magni accusantium aperiam dicta eum illum praesentium? Fugiat deleniti magni iure. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt officiis fuga eveniet consectetur optio officia voluptates doloremque libero ex, ea explicabo corrupti molestias. Atque fugit, in facere suscipit at laboriosam distinctio repellendus rerum consequuntur sapiente! Nesciunt, dolores blanditiis! Dolorum dolor rerum, hic iure assumenda ea reprehenderit laudantium obcaecati iste ab nulla sunt voluptatem consectetur, expedita sint veniam quaerat amet libero deserunt odio accusamus ex eos ducimus. Repudiandae eaque porro error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, laudantium Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, fugiat?</div>
+    <p><mark>In max-height overflow:auto works</mark></p>
+    
+    <p class="note"><mark>NOTE: WHEN WE MENTION ONLY MIN-WIDTH PROPERTY AND DON'T MENTION ANY HEIGHT IT WILL TAKE THE HEIGHT OF THE GIVEN TEXT</mark><p>
+    <hr>
+
+    
+    <!-- ---------------------MAX WIDTH----------------------->
+    <h2>max-width</h2>
+    <div class="max-width"></div> 
+    <p> <mark> when no text is given max-width is applied </mark></p>
+
+    <h2>max-width1</h2>
+    <div class="max-width1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.hi </div>
+
+    <p><mark> when the text is given, then also the width(max-width) is applied. </mark></p>
+
+    <h2>max-width2</h2>
+    <div class="max-width2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis quas quis, eveniet at, quibusdam iure vel modi a dignissimos perferendis voluptas, adipisci voluptatibus qui quidem ad esse voluptates temporibus autem tenetur corporis blanditiis nam cupiditate incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro olorum dolor rerum, ducimus. Repudiandae eaque porro error? sit amet consectetur adipisicing fugiat?</div>
+
+    <p><mark>when more text is applied the box doesn't expands.</mark></p>
+
+    <h2>max-width3</h2>
+    <div class="max-width3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis reiciendis quas quis, eveniet at, quibusdam iure vel modi a dignissimos perferendis voluptas, adipisci voluptatibus qui quidem ad esse voluptates temporibus autem tenetur corporis blanditiis nam cupiditate incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+
+    <p><mark>In max-width overflow:auto works</mark></p>
+
+    <p class="note"><mark>NOTE: WHEN WE MENTION ONLY MAX-WIDTH PROPERTY AND DON'T MENTION ANY HEIGHT IT WILL TAKE THE HEIGHT OF THE GIVEN TEXT</mark><p>
+</body>
+</html>

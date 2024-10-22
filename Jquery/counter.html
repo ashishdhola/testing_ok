@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Up - Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="./counter.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    a,
+    li {
+        list-style: none;
+        text-decoration: none;
+    }
+
+
+    .container {
+        width: 100vw;
+        background: #2E4374;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        width: 1024px;
+    }
+
+    .main .header {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 70px;
+        font-family: 'Playpen Sans', cursive;
+        font-weight: 800;
+    }
+
+    .main .content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main .content .round {
+        background: #F4CE14;
+        height: 100px;
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        border-radius: 70px;
+    }
+
+    .main .content .round p {
+        color: #001524;
+        align-self: center;
+        font-family: 'Playpen Sans', cursive;
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        font-size: 60px;
+        position: relative;
+    }
+
+    .youtube{
+        position: absolute;
+        left: 35px;
+    }
+
+    .ig{
+        position: absolute;
+        left: 486px; 
+    }
+
+    .linkedin{
+        position: absolute;
+        right: 50px;
+    }
+
+    @media only screen and (max-width: 576px) {
+        .container {
+            background: #354259;
+        }
+
+        .main {
+            width: 380px;
+            margin: 0px 10px;
+        }
+
+        .main .header {
+            color: #EBF3E8;
+        }
+
+        .main .content .round {
+            height: 70px;
+            width: 70px;
+            background: #86A789;
+        }
+
+        .main .content .round p {
+            color: #EBF3E8;
+            font-size: 22px;
+        }
+
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <section class="main">
+            <div class="header">
+                <h2>COUNTER JS</h2>
+            </div>
+            <div class="content">
+                <div class="round">
+                    <p class="counter" data-number="200" data-speed="1000"></p>
+                    <p>k+</p>
+                </div>
+                <div class="round">
+                    <p class="counter" data-number="140" data-speed="1000"></p>
+                    <p>k+</p>
+                </div>
+                <div class="round">
+                    <p class="counter" data-number="100" data-speed="1000"></p>
+                    <p>+</p>
+                </div>
+            </div>
+            <div class="icons">
+                <div class="youtube"><i class="fa-brands fa-youtube" style="color: red;"></i></div>
+                <div class="ig"><i class="fa-brands fa-instagram"></i></div>
+                <div class="linkedin"><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="./counter.css"></script>
+    <script>
+        let counter = document.querySelectorAll('.counter')
+        let arr = Array.from(counter)
+
+        arr.map((item) => {
+
+            let count = 0
+
+            function counterup() {
+                count++;
+                item.innerHTML = count;
+                console.log(count);
+                if (count == item.dataset.number) {
+                    clearInterval(stop)
+                }
+            }
+
+            let stop = setInterval(() => {
+                counterup()
+            }, item.dataset.speed / item.dataset.number)
+
+        })
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>percent-grade</title>
+</head>
+
+<body>
+    <h2>1. wap to javascript class and object method use program to input marks of five subjects Physics, Chemistry,
+        Biology, Mathematics and Computer. Calculate percentage and grade according to following:
+        <br>
+        Percentage >= 90% : Grade A <br>
+        Percentage >= 80% : Grade B <br>
+        Percentage >= 70% : Grade C <br>
+        Percentage >= 60% : Grade D <br>
+        Percentage >= 50% : Grade E <br>
+        Percentage >= 40% : Grade F
+    </h2>
+    <script>
+        class Marks {  // class
+            constructor(name, physics, chemistry, biology, maths, computer) {  //constructor
+                this.name = name;
+                this.subjects = {  //object
+                    physics,
+                    chemistry,
+                    biology,
+                    maths,
+                    computer,
+                };
+            }
+
+            calculatePercentage() {
+                const totalMarks = Object.values(this.subjects).reduce((total, currentValue) => total + currentValue);
+                const percentage = (totalMarks / 500) * 100;
+                return percentage;
+            }
+
+            getGrade() {
+                const percentage = this.calculatePercentage();
+
+                if (percentage >= 90 && percentage <= 100) {
+                    return 'A';
+                } else if (percentage >= 80 && percentage < 90) {
+                    return 'B';
+                } else if (percentage >= 70 && percentage < 80) {
+                    return 'C';
+                } else if (percentage >= 60 && percentage < 70) {
+                    return 'D';
+                } else if (percentage >= 50 && percentage < 60) {
+                    return 'E';
+                } else {
+                    return 'F';
+                }
+            }
+
+            displayResults() {
+                console.log(`Student Name: ${this.name}`);
+                console.log('Marks');
+
+                for (const subject in this.subjects) {  // for-in loop => subject stores the key and this.subjects = value
+                    console.log(`${subject}: ${this.subjects[subject]}`);
+                }
+
+                // console.log(Object.values(this.subjects));
+                console.log(`Total Marks: ${Object.values(this.subjects).reduce((total, currentValue) => total + currentValue)}`);
+                console.log(`Percentage: ${this.calculatePercentage().toFixed(2)}%`);
+                console.log(`Grade: ${this.getGrade()}`);
+                console.log(`\n`);
+            }
+
+        }
+
+        let dhvani = new Marks("Dhvani", 94, 56, 87, 86, 59);
+        dhvani.calculatePercentage();
+        dhvani.getGrade();
+        dhvani.displayResults();
+
+        let khushi = new marks("Khushi", 67, 34, 89, 85, 66);
+        khushi.calculatePercentage();
+        khushi.getGrade();
+        khushi.displayResults();
+
+    </script>
+</body>
+
+</html>

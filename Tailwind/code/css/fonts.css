@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Satisfy';
+    src: url('../fonts/Satisfy-Regular.woff2') format('woff2'),
+        url('../fonts/Satisfy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    src: url('../fonts/NanumMyeongjoBold.woff2') format('woff2'),
+        url('../fonts/NanumMyeongjoBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumMyeongjoExtraBold';
+    src: url('../fonts/NanumMyeongjoExtraBold.woff2') format('woff2'),
+        url('../fonts/NanumMyeongjoExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    src: url('../fonts/NanumMyeongjo.woff2') format('woff2'),
+        url('../fonts/NanumMyeongjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

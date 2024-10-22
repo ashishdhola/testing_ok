@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+ 
+}
+body{
+    background-color:rgb(255, 238, 232);
+
+}   
+
+h1{
+text-align: center;
+background-color:darkgrey;
+}
+.main{
+    margin: 0px auto;
+    border: 10px groove black;
+    width: 819.5px;
+   min-height: 800px;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    float: left;
+    color: black;
+    font-size: 70px;
+    text-align: center;
+   
+}
+
+.box2{
+    background-color: black;
+    color: white;
+}
+
+.clear-fit{
+    clear: both;
+}

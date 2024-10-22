@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade</title>
+</head>
+<style>
+    .box-1,
+    .box-2,
+    .box-3,
+    .box-4 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .fade-in,
+    .fade-out,
+    .fade-toogle,
+    .fade-to {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: rosybrown;
+    }
+</style>
+
+<body>
+    <div class="box-1" style="background-color:red;"></div>
+    <div class="box-2" style="background-color:blueviolet;"></div>
+    <div class="box-3" style="background-color:deeppink;"></div>
+    <div class="box-4" style="background-color:seagreen ;"></div>
+
+    <button class="fade-in">FADE IN</button>
+    <button class="fade-out">FADE OUT</button>
+    <button class="fade-toogle">FADE TOOGLE</button>
+    <button class="fade-to">FADE TO</button>
+
+    <script src="js/jquery.min.js"></script>
+     <script>
+        $(document).ready(function () {
+            $(".fade-in").click(function () {
+                $(".box-1").fadeIn();
+                $(".box-2").fadeIn();
+                $(".box-3").fadeIn();
+                $(".box-4").fadeIn();
+            });
+
+            $(".fade-out").click(function () {
+                $(".box-1").fadeOut();
+                $(".box-2").fadeOut();
+                $(".box-3").fadeOut();
+                $(".box-4").fadeOut();
+            });
+
+            $(".fade-toogle").click(function () {
+                $(".box-1").fadeToggle();
+                $(".box-2").fadeToggle();
+                $(".box-3").fadeToggle();
+                $(".box-4").fadeToggle();
+            });
+
+            $(".fade-to").click(function () {
+                $(".box-1").fadeTo("slow", 0.4);
+                $(".box-2").fadeTo("slow", 0.5);
+                $(".box-3").fadeTo("slow", 0.6);
+                $(".box-4").fadeTo("slow", 0.7);
+            });
+        });
+    </script> 
+
+</body>
+
+</html>

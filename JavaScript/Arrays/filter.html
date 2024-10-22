@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+
+<body>
+    <script>
+        /*=============filter============*/
+
+        let arr = [1, 2, 3, 4, 5, 6, 7];
+
+        let demo = arr.filter((val, index) => index == 0);
+        console.log(demo);
+
+        // let demo = arr.filter((val) => {
+        //     if(val==4){
+        //         console.log("found");
+        //     }
+        // });
+        // console.log(demo);
+
+        let res = arr.filter((val) => val == 4);
+        console.log(res);
+
+        let one = arr.filter((val) => val == 14);
+        console.log(one);
+
+    </script>
+</body>
+
+</html>

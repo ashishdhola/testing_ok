@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="box">
+        <input type="text" placeholder="Title" id="title">
+        <input type="text" placeholder="Note" id="note">
+    </div>
+
+    <button onclick="ClearAll()">Clear All</button>
+
+    <button id="button">submit</button> <br><br>
+
+    <!-- note card -->
+    <div class="main"></div>
+    <br><br>
+
+    <!-- update input -->
+    <div class="updateBox"></div>
+
+    <!-- update button -->
+    <!-- <button onclick="updateData()">update Data</button> -->
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+        let button = document.querySelector("#button");
+        let arr = JSON.parse(localStorage.getItem("list")) || [];
+        let main = document.querySelector(".main");
+
+        button.addEventListener('click', () => {
+            let title = document.querySelector("#title").value;
+            let note = document.querySelector("#note").value;
+
+            let data = {
+                title,
+                note
+            }
+            arr.push(data);
+            localStorage.setItem("list", JSON.stringify(arr));
+            location.reload();
+            console.log(data);
+        });
+
+        function addData() {
+            arr.map((val, index) => {
+                let div = document.createElement("div");
+                div.innerHTML =
+                    `<div class="card-wrap">
+                    <div>${val.title}</div>
+                    <div>${val.note}</div>
+                    <button onclick="deleteData(${index})"><img src="trash.png"/></button>
+                     <button onclick="editData(${index})"><img src="edit.png"/></button>
+                     
+
+                </div>`;
+                main.appendChild(div);
+            });
+        }
+        addData();
+
+        function editData(index) {
+            let data = arr[index];
+            console.log(data);
+
+            arr.map((val, index) => {
+                let updateBox = document.querySelector(".updateBox");
+                updateBox.innerHTML =
+                    `<input type="text" placeholder="Title" id="newtitle">
+                <input type="text" placeholder="Note" id="newnote">
+                <input type="hidden" id="index">
+                <button onclick="updateData()">update Data</button>`;
+            });
+            document.getElementById("newtitle").value = data.title;
+            document.getElementById("newnote").value = data.note;
+            document.getElementById("index").value = index;
+        }
+
+        function updateData() {
+            let title = document.getElementById("newtitle").value;
+            let note = document.getElementById("newnote").value;
+            let index = document.getElementById("index").value;
+
+            let data = {
+                title,
+                note
+            };
+            arr.splice(index, 1, data);
+            localStorage.setItem("list", JSON.stringify(arr));
+            location.reload();
+        }
+
+        function deleteData(index) {
+            arr.splice(index, 1);
+            localStorage.setItem("list", JSON.stringify(arr));
+            location.reload();
+        }
+
+        const ClearAll = () => {
+            localStorage.removeItem('list');
+            location.reload();
+            console.log(localStorage);
+        }
+    </script>
+</body>
+
+</html>

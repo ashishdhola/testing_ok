@@ -1,0 +1,139 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+body{
+    background-color: bisque;
+}
+nav{
+    background-color: blueviolet;
+    width: 300px;
+    margin: 20% auto;
+}
+nav ul{
+    list-style: none;
+    padding: 0px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: bisque;
+    padding: 10px;
+    display: block;
+}
+nav ul li:hover a{
+    color: aqua;
+}
+nav ul li:nth-child(1) a{
+    border-left: 10px solid green;
+}
+nav ul li:nth-child(2) a{
+    border-left: 10px solid red;
+}
+nav ul li:nth-child(3) a{
+    border-left: 10px solid yellow;
+}
+nav ul li:nth-child(4) a{
+    border-left: 10px solid pink;
+}
+nav ul li:nth-child(5) a{
+    border-left: 10px solid orange;
+} */
+/* nav ul li a::after{
+    content: '';
+    posi
+} */
+
+*{
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+body{
+    background-color: orchid;
+}
+
+nav{
+    width: 300px;
+    margin: 20% auto;
+    background-color: blanchedalmond;
+}
+
+nav ul{
+    padding: 0px;
+    list-style: none;
+ }
+ /*
+nav ul li{
+    list-style: none; also works here
+} */
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+    padding: 10px;
+    display: block; 
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li:hover a{
+    color:deeppink;
+}
+
+nav ul li:nth-child(1) a{
+    border-left: 10px solid greenyellow;
+}
+
+nav ul li:nth-child(2) a{
+    border-left: 10px solid darkred;
+}
+
+nav ul li:nth-child(3) a{
+    border-left: 10px solid blue;
+}
+
+nav ul li:nth-child(4) a{
+    border-left: 10px solid orangered;
+}
+
+nav ul li:nth-child(5) a{
+    border-left: 10px solid darkgreen;
+}  
+
+nav ul li a::after{
+    content: '';
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: all 0.5s ease-in; 
+}
+
+
+nav ul :hover a::after{
+    width: 100%;
+}
+
+nav ul li:nth-child(1) a::after{
+    background-color:darkblue ;
+    }
+    
+    nav ul li:nth-child(2) a::after{
+       background-color:  darkgreen ; 
+    }
+    
+    nav ul li:nth-child(3) a::after{
+        background-color:  blue ;
+    }
+    
+    nav ul li:nth-child(4) a::after{
+        background-color:rgb(255, 242, 4);
+    }
+    
+    nav ul li:nth-child(5) a::after{
+        background-color:  purple;
+    }

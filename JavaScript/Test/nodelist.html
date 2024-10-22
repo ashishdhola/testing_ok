@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node-htmlCollection</title>
+</head>
+
+<body>
+    <h1 class="title">Welcome To Javascript</h1>
+
+    <h3>hello</h3>
+    <h3>world</h3>
+
+    <script>
+        // HTMLCollection[]
+        let heading = document.getElementsByClassName("title");
+        console.log(heading);
+
+        for (i = 0; i < heading.length; i++) {
+            heading[i].style.color = "coral";
+        }
+
+        // NodeList
+        let text = document.querySelectorAll("h3");
+        console.log(text);
+
+        text.forEach((val, index) => {
+            val.style.backgroundColor = "purple";
+            val.style.color = "white";
+            val.style.fontSize = "30px";
+        });
+
+    </script>
+</body>
+
+</html>

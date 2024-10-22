@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>description</th>
+            <th>category</th>
+            <th colspan="2">rating</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script>
+        fetch('https://fakestoreapi.com/products/').then(res => {
+            res.json().then(response => {
+                response.map((val, index) => {
+                    let tbody = document.getElementById("tbody");
+                    let tr = document.createElement("tr");
+                    tr.innerHTML =
+                        `<td>${val.id}</td>
+                    <td>${val.title}</td>
+                    <td>${val.price}</td>
+                    <td>${val.description}</td>
+                    <td>${val.category}</td>
+                    <td>${val.rating.count}</td>
+                    <td>${val.rating.rate}</td>`;
+                    tbody.appendChild(tr);
+                });
+                console.log(response);
+            });
+        });
+    </script>
+</body>
+
+</html>

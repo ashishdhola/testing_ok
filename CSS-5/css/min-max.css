@@ -1,0 +1,115 @@
+
+hr {
+    border: 5px double purple;
+}
+
+.min-height {
+    width: 200px;
+    min-height: 200px;
+    background-color: palevioletred;
+}
+
+.min-height1 {
+    width: 200px;
+    min-height: 200px;
+    background-color: palevioletred;
+}
+
+.min-height2 {
+    width: 200px;
+    min-height: 200px;
+    background-color: palevioletred;
+}
+
+.min-height3 {
+    width: 200px;
+    min-height: 200px;
+    background-color: palevioletred;
+    overflow: auto;
+}
+
+/* --------------------MAX HEIGHT------------------ */
+
+.max-height {
+    width: 200px;
+    max-height: 200px;
+    background-color: palegreen;
+}
+
+.max-height1 {
+    width: 200px;
+    max-height: 200px;
+    background-color: palegreen;
+}
+
+.max-height2 {
+    width: 200px;
+    max-height: 200px;
+    background-color: rgb(241, 169, 14);
+    display: inline-block;
+}
+
+.max-height3 {
+    width: 200px;
+    max-height: 200px;
+    background-color: palegreen;
+    overflow: auto;
+}
+
+
+/* ----------------------MIN WIDTH------------------- */
+
+.min-width {
+    min-width: 200px;
+    height: 200px;
+    background-color:cyan;
+}
+
+.min-width1 {
+    min-width: 200px;
+    height: 200px;
+    background-color: cyan;
+}
+
+.min-width2 {
+    min-width: 100px;
+    height: 100px;
+    background-color: cyan;
+    display: inline-block;
+}
+
+.min-width3 {
+   min-width: 200px;
+    height: 200px;
+    background-color: cyan;
+    overflow: auto;
+}
+
+
+/* --------------------MAX WIDTH------------------- */
+
+.max-width {
+    max-width: 200px;
+    height: 200px;
+    background-color:khaki;
+}
+
+.max-width1 {
+    max-width: 200px;
+    height: 200px;
+    background-color: khaki;
+}
+
+.max-width2 {
+    max-width: 200px;
+    height: 200px;
+    background-color: khaki;
+    display: inline-block;
+}
+
+.max-width3 {
+    max-width: 200px;
+    height: 200px;
+    background-color: khaki;
+    overflow: auto;
+}

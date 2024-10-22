@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greatest-4-nested</title>
+</head>
+<body>
+    <h2>3. Write a JavaScript program to find which number is greater in 4 numbers using nested if else. (using simple function)</h2>
+    <script>
+        function num(a,b,c,d) {
+            console.log("A :",a);
+            console.log("B :",b);
+            console.log("C :",c);
+            console.log("D :",d);
+
+            if(a>b){ //main if
+                if(a>c){
+                    if(a>d){
+                        console.log("First Number is Greatest");
+                    }
+                    else{
+                        console.log("Fourth Number is Greatest");
+                    }
+                }
+                else{
+                    if(c>d){
+                        console.log("Third Number is Greatest");
+                    }
+                    else{
+                        console.log("Fourth Number is Greatest");
+                    }
+                }
+            }
+            else{ //main else
+                if(b>c){
+                    if(b>d){
+                        console.log("Second Number is Greatest");
+                    }
+                    else{
+                        console.log("Fourth Number is Greatest");
+                    }
+                }
+                else{
+                    if(c>d){
+                        console.log("Third Number is Greatest");
+                    }
+                    else{
+                        console.log("Fourth Number is Greatest");
+                    }
+                }
+            }   
+        }
+
+        num(9,54,75,14); // function calling
+    </script>
+</body>
+</html>

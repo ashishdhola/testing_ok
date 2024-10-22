@@ -1,0 +1,117 @@
+.col-3 {
+    width: 25%;
+}
+
+.padding-l-r {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* ========RECENT ACTIVITY======= */
+
+.recent-activity-box .activity-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-activity-box .activity-wrap p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--light-black);
+    margin-bottom: 10px;
+}
+
+.recent-activity-box .activity-wrap .select-box {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    border-radius: 12px;
+}
+
+.activity-wrap select {
+    width: 100%;
+    justify-content: space-between;
+    background: #f7fafc;
+    font-weight: 400;
+    font-size: 16px;
+    color: #9aa2b1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    min-height: 56px;
+    padding: 0 20px;
+    border: none;
+    margin: 0;
+    border-radius: 12px;
+}
+
+/* 
+.activity-wrap button i {
+    width: 24px;
+    color: var(--blue-color);
+} */
+
+/* .activity-wrap select { */
+/* width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #4444441c;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.75) translateY(-21px);
+} */
+
+/* .activity-wrap .select-box-options selected {
+    background: var(--blue-color);
+    font-weight: 400;
+    color: #fff;
+} */
+
+.activity-wrap .select-box-options option {
+   
+    background-color: pink !important;
+}
+
+option:not(:checked) {
+    background-color: #ff1919 !important;
+    padding-left: 18px !important;
+    padding-right: 29px !important;
+    font-size: 20px !important;
+    cursor: pointer !important;
+    font-weight: 400 !important;
+    line-height: 40px !important;
+    list-style: none !important;
+    min-height: 40px !important;
+    outline: none !important;
+    font-size: 16px !important;
+    text-align: left !important;
+    transition: all .2s;
+ }
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select {
+    border: unset !important;
+    background-image: url('../img/free-arrow-down-icon-3101-thumb.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0.7rem top 50% !important;
+    background-size: 0.65rem auto !important;
+}
+
+
+/* .activity-wrap button:focus .select-box-options {
+    visibility: visible;
+    opacity: 1;
+} */

@@ -1,0 +1,15 @@
+.recommendedMovies{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container{
+    max-width: 1240px;
+    padding: 0px 0px 32px;
+    margin: 0px auto;
+}
+
+.recommended-heading{
+    margin-bottom: 8px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADLINE</title>
+    <link rel="stylesheet" href="css/jquery.animatedheadline.css">
+</head>
+
+<body>
+    <div class="selector" style="display: flex; justify-content: center; text-align: center;">
+        <h1 class="ah-headline" style="text-align: center;">
+            <span>I Love </span>
+            <span class="ah-words-wrapper">
+                <b class="is-visible">jQueryScript.Net</b>
+                <b>Lorem, ipsum.</b>
+                <b>VueScript.Com</b>
+            </span>
+        </h1>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.animatedheadline.js"></script>
+
+    <script>
+        $(function () {
+            $('.selector').animatedHeadline({
+                animationType: 'type'
+            });
+        });
+    </script>
+</body>
+
+</html>

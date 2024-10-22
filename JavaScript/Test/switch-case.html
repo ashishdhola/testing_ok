@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch-case</title>
+</head>
+
+<body>
+    <script>
+        let operator = prompt("Enter your operator");
+        let a = parseInt(prompt("enter first number"));
+        let b = parseInt(prompt("enter second number"));
+
+        console.log("A :", a);
+        console.log("B :", b);
+
+        switch (operator) {
+            case '+':
+                console.log("Addition :",a + b);
+                break;
+
+            case '-':
+                console.log("Subtraction :",a - b);
+                break;
+
+            case '*':
+                console.log("Multiplication :",a * b);
+                break;
+
+            case '/':
+                console.log("Division :",a / b);
+                break;
+
+            case '%':
+                console.log("Modulus :",a % b);
+                break;
+
+            default:
+                console.log("enter valid operator");
+                break;
+        }
+    </script>
+</body>
+
+</html>

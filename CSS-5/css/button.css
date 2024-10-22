@@ -1,0 +1,12 @@
+.box{
+    padding: 25px 25px;
+    background-color: plum;
+    color: palevioletred;
+    border: 10px solid blue;
+    display: inline-block;
+}
+
+.box:hover{
+    background-color: blueviolet;
+    color: aliceblue;
+}

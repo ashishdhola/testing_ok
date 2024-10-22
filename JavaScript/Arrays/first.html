@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        let marks = [56, 86, 34, 89, 54];
+        console.log(marks);
+
+        console.log(marks[9]); //undefined bcoz when we try to access the index number which doesn't exist then we get the output as undefined
+
+        marks[2] = 78;
+        console.log(marks);
+
+        console.log("--------------------");
+        /*==================================*/
+
+        let num = [10, 20, 30, 40];
+        console.log(num);
+        num[8] = 80;
+        console.log(num);
+
+
+        console.log("--------------------");
+        /*==========.length()=============*/
+
+        let vowels = ['a', 'i', 'e', 'o', 'u'];
+        console.log(vowels);
+
+        for (let i = 0; i < vowels.length; i++) {
+            console.log(vowels[i]);
+        }
+
+        /*==========.toUpperCase()=============*/
+
+        console.log("UpperCase using for-of loop");
+
+        for (let alphabets of vowels) {  //using for-of loop
+            console.log(alphabets.toUpperCase());
+        }
+
+    </script>
+</body>
+
+</html>

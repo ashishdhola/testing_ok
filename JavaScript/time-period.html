@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Time Period</title>
+</head>
+<body>
+  <!-- <label for="userTime">Enter a time (24-hour format, HH:MM):</label>
+  <input type="time" id="userTime"> -->
+  <button onclick="getPeriod()">Get Time Period</button>
+  <p id="period"></p>
+
+  <script>
+    function getTimePeriod(hour){
+        if (hour >= 6 && hour < 12) {
+            console.log("Morning");
+        } 
+        else if (hour >= 12 && hour < 18) {
+            console.log("Afternoon");
+        } 
+        else if (hour >= 18 && hour < 21) {
+            console.log("Evening");
+        }
+        else {
+            console.log("Night");
+        }
+    }
+
+    function getPeriod() {
+      const userTimeInput = document.getElementById("userTime").value;
+      const hours = parseInt(userTimeInput.split(":")[0]);
+      const period = getTimePeriod(hours);
+      document.getElementById("period").textContent = "The time period is " + period + ".";
+    }
+  </script>
+</body>
+</html>

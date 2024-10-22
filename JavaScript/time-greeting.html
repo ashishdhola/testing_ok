@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Greeting</title>
+</head>
+<body>
+
+    <script>
+
+        let hour = parseInt(prompt("Enter time"));
+
+        if (hour>=1 && hour<=12) {
+            document.write("Morning");
+        } 
+        else if (hour>12 && hour<=16) {
+            document.write("Afternoon");
+        } 
+        else if (hour>16 && hour<=21) {
+            document.write("Evening");
+        }
+        else if (hour>21 && hour<=24){
+            document.write("Night");
+        }
+        else{
+            document.write("Invalid");
+        }
+
+    </script>
+</body>
+</html>

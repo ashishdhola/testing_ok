@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1>hello world!</h1>
+
+    <div class="myClass">Class</div>
+
+    <div id="id">ID</div>
+
+    <p class="title">hi</p>
+    <p class="title">bye</p>
+    <button onclick="btn()">Click Me!</button>
+
+    <script>
+        //The getElementsByClassName() and getElementsByTagName() methods return a live HTMLCollection.
+
+        //The querySelectorAll() method returns a static NodeList.
+
+        console.log("querySelector");
+        console.log(document.querySelector("h1")); // html tag with the text
+        console.log(document.querySelectorAll("h1"));  //nodelist
+        console.log(document.getElementsByTagName("h1"));  //HTMLCollection
+
+        let res = document.querySelector("h1").innerHTML = "Welcome to JS !";
+        console.log(res);
+
+        console.log(document.querySelector("h1").style.color = "purple");
+
+        let demo = document.querySelector("h1");
+        demo.style.backgroundColor = "yellow";
+
+        /*==============classes==============*/
+
+        let demo1 = document.querySelector(".title");   // html tag with the text
+        console.log(demo1);  
+  
+        let demo2 = document.querySelectorAll(".title");  //nodelist
+        console.log(demo2);
+
+        demo2.forEach((val, index) => {
+            val.style.backgroundColor = "coral";
+        })
+
+        let demo3 = document.getElementsByClassName("myClass");  //HTMLCollection
+        console.log(demo3);
+
+        for (let i = 0; i < demo3.length; i++) {
+            demo3[i].style.color = "gray";
+            demo3[i].style.fontSize = "40px";
+        }
+
+        /*===============id=================*/
+
+        console.log(document.querySelector("#id"));  //  html tag with the text
+
+        console.log(document.querySelectorAll("#id"));  //nodelist
+
+        let id = document.getElementById("id");   // html tag with the text
+        console.log(id);
+        // id.style.fontSize = "50px";
+
+
+        /*==============button============*/
+        document.querySelector("button").style.backgroundColor = "purple";
+        document.querySelector("button").style.color = "yellow";
+        document.querySelector("button").style.padding = "10px";
+
+        function btn() {
+            let demo = document.querySelector("h1");
+            let id = document.getElementById("id");
+            let classes = document.getElementsByClassName("myClass");
+
+            demo.style.backgroundColor = "coral";
+            demo.style.transition = "all 0.3s ease-in-out";
+
+            id.style.fontSize = "45px";
+            id.style.transition = "all 0.3s ease-in-out";
+
+            // classes.style.fontSize = "40px";
+            // classes.style.transition = "all 0.3s ease-in-out";
+
+        }
+
+        /* ===================*/
+        // console.log(document);
+        // let tag = document.getElementsByTagName("h1");
+        // let classes = document.getElementsByClassName("myClass");
+        // let ids = document.getElementById("id");
+        // console.log(tag);
+        // console.log(classes);
+        // console.log(ids);
+    </script>
+
+</body>
+
+</html>

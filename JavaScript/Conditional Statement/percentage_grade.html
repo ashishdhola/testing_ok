@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>percentage-grade</title>
+</head>
+<body>
+  
+  <h2>6. Write a Javascript program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. 
+    Calculate percentage and grade according to following :
+    <br><br>
+    Percentage >= 90% : Grade A <br>
+    Percentage >= 80% : Grade B <br>
+    Percentage >= 70% : Grade C <br>
+    Percentage >= 60% : Grade D <br> 
+    Percentage >= 50% : Grade E <br>
+    Percentage >= 40% : Grade F</h2>
+
+  <h2>Enter marks of physics :</h2>
+  <input type="number" id="n1">
+
+  <h2>Enter marks of Chemistry :</h2>
+  <input type="number" id="n2">
+
+  <h2>Enter marks of Biology :</h2>  
+  <input type="number" id="n3">
+
+  <h2>Enter marks of Mathematics :</h2>
+  <input type="number" id="n4"> 
+  
+  <h2>Enter marks of Computer :</h2>
+  <input type="number" id="n4">
+
+  <br><br>
+
+  <button onclick="getNumber()">Enter grade</button>
+
+  <h2 id="total"></h2>
+
+  <script>
+    function getNumber() {
+
+      let n1 = document.getElementById("n1").value;
+      let n2 = document.getElementById("n2").value; 
+      let n3 = document.getElementById("n3").value;
+      let n4 = document.getElementById("n4").value;
+        
+      let total =  parseInt(n1) +  parseInt(n2) + parseInt(n3) + parseInt(n4) ; // Input is string so typecasting is necessary. 
+
+      let percent = total/4;
+      document.write("Percentage = ",percent);
+
+      if(percent>=90 && percent<=100){
+        document.write("  Grade A");
+      }
+      else if(percent>=80 && percent<=90){
+        document.write("  Grade B");
+      }
+      else if(percent>=70 && percent<=80){
+        document.write("  Grade C");
+      }
+      else if(percent>=60 && percent<=70){
+        document.write("  Grade D");
+      }
+      else if(percent>=50 && percent<=60){
+        document.write("  Grade E");
+      }
+      else{
+        document.write("  Grade F");
+      }
+    }
+  </script>
+</body>
+</html>

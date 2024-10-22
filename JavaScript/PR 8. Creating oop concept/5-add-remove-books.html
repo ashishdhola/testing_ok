@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>libray</title>
+</head>
+
+<body>
+    <h2>5. Write a Javascript program to create a class called "Library" with a collection of books and methods to add
+        and remove books.</h2>
+
+    <script>
+        class Library {
+            constructor() {
+                this.books = ["Sapiens", "Meditations", "Coraline", "World War Z", "Dracula"];
+                console.log(this.books);
+            }
+
+            addBooks(bookName) {
+                this.books.push(bookName);
+                console.log(this.books);
+            }
+
+            removeBooks() {
+                this.books.pop();
+                console.log(this.books);
+            }
+        }
+
+        let bookName = prompt("Enter book name you want to add");
+
+        let demo = new Library();
+        demo.addBooks(bookName);
+        demo.removeBooks();
+    </script>
+</body>
+
+</html>

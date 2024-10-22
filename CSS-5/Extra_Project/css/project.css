@@ -1,0 +1,33 @@
+i{
+    color: blue;
+    font-size: 150px;
+}
+
+h1{
+    font-family: 'Noto Serif', serif;
+}
+
+p{
+   font-family: 'Borel';
+   font-size: 20px;
+}
+
+h2{
+    font-family: 'Pacifico';
+}
+
+table{
+    font-family: 'Itim';
+}
+
+.one{
+    background-color: #001934;
+    color: whitesmoke;
+    line-height: 40px;
+    word-spacing: 5px;
+    font-size: 30px;
+}
+
+.two{
+    background-color: #CACFD2;
+}

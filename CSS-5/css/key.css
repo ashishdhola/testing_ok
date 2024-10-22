@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* Make the page tall to allow scrolling */
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Hide overflow to prevent scrollbar */
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100%); /* Start with grayscale */
+    transition: filter 2s ease-in-out;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/happy.png'); /* Replace with your image URL */
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(100%); /* Maintain grayscale */
+    transition: filter 2s ease-in-out;
+}
+
+.image-container:hover,
+body.active .image-container {
+    filter: grayscale(0%); /* Remove grayscale on hover or scroll */
+}
+
+.scroll-indicator {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

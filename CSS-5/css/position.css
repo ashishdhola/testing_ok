@@ -1,0 +1,53 @@
+div{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+p{
+    font-size: 50px;
+}
+
+.box1{
+    background-color: blue;
+    position:static;
+}
+
+.box2{
+    background-color: purple;
+    position: relative;
+    /* margin-left: 300px; */
+    left: 300px;
+    /* top: 100px; */
+}
+
+.box{
+    position: relative;
+    /* left: 300px; */
+
+}
+ .box3{
+    background-color: yellowgreen;
+     position: absolute; 
+     left:300px;
+}
+.box5{
+    background-color: deeppink;
+    position: sticky;
+    top: 10px;
+}  
+.box4{
+    background-color: darkred;
+    top: 10px;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+}
+
+.container{
+    width: 300px;
+    height: 100px;
+    background-color: deepskyblue;
+    overflow-Y:scroll;
+}
+

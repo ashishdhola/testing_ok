@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance</title>
+</head>
+
+<body>
+    <h2>Inheritance:
+        Inheritance allows you to create new classes (subclasses) that inherit properties and methods from an existing
+        class (superclass). This promotes code reuse and creates hierarchical relationships between objects.</h2>
+    <script>
+        class Parent {
+            property1() {
+                console.log("Parent property 1");
+            }
+            property2() {
+                console.log("Parent property 2");
+            }
+            house() {
+                console.log("Parent house");
+            }
+        }
+
+        class Child extends Parent {
+            house() {
+                console.log("child house");
+            }
+        }
+
+        // Multilevel Inheritance:
+        // A subclass (Grandchild) inherits from another subclass(Child), which in turn inherits from a superclass(Parent). This creates a chain of inheritance where a subclass inherits properties and methods from multiple superclasses through levels.
+
+        class Grandchild extends Parent {
+            house() {
+                console.log("Grandchild house");
+            }
+        }
+
+        let output = new Parent();
+        output.property1();
+
+        let output2 = new Child();
+        output2.property1();
+
+        let apple = new Grandchild();
+        apple.house();
+
+        let mango = new Child();
+        mango.house();
+
+        let output3 = new Parent();
+        output3.house();
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+
+<body>
+    <p>addEventListener is a built-in function in JavaScript that allows you to attach an event handler to a specified element, such as a button or a link. The addEventListener function takes two arguments: the type of the event you want to listen for (e.g. "click" or "keydown") and the function that should be called when the event is detected.</p>
+
+    <button id="id">Submit</button>
+    <button id="my-button">Click Me!</button>
+    <script>
+        document.getElementById("id").addEventListener("click", () => {
+            alert('submitted');
+        });
+
+        let button = document.querySelector('#my-button');
+        button.addEventListener('click', function () {
+            console.log('Button was clicked');
+        });
+    </script>
+
+
+</body>
+
+</html>

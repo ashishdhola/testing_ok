@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get-set-attibute</title>
+</head>
+<style>
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(192, 188, 137);
+    }
+</style>
+
+<body>
+    <div class="classes">hi</div>
+    <p id="id">hello</p>
+    <script>
+        // let div = document.getElementsByClassName("classes");
+        let div = document.querySelector("div");
+        console.log(div);
+        console.log(div.getAttribute("class"));
+        div.setAttribute("class", "box");
+        // let abc = document.querySelector("div").setAttribute("class", "box");
+        // console.log(abc);
+
+        let p = document.querySelector("p");
+        console.log(p);
+        console.log(p.getAttribute("id"));
+        p.setAttribute("class", "box");
+    </script>
+</body>
+
+</html>

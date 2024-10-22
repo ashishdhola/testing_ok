@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise</title>
+</head>
+
+<body>
+    <input type="text" placeholder="username" id="username">
+    <input type="password" placeholder="password" id="password">
+    <button onclick="submit()">submit</button>
+    <br /><br />
+
+    <p>update data :</p>
+    <input type="text" id="newusername">
+    <input type="password" id="newpassword">
+    <input type="hidden" id="index">
+    <button onclick="updateData()">update Data</button> <br><br>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+            <th>Username</th>
+            <th>Email</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <script>
+        //set data in local storage
+        let arr = JSON.parse(localStorage.getItem("key")) || [];
+        function submit() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            let data = {
+                username,
+                password
+            }
+            // let arr = localStorage.getItem(JSON.parse("key"));  //???
+            arr.push(data);
+            localStorage.setItem("key", JSON.stringify(arr));
+            // location.reload();  //?
+            console.log(data);
+        }
+
+        // adding data in a table
+        function addDataInTable() {
+            let tbody = document.getElementById("tbody");
+            arr.map((val, index) => {
+                let tr = document.createElement("tr");
+                tr.innerHTML =
+                    `<td>${val.username}</td>
+                     <td> ${val.password}</td>
+                     <button onclick="deleteData(${index})"><img src="trash.png"/></button>
+                     <button onclick="editData(${index})"><img src="edit.png"/></button>`;
+                tbody.appendChild(tr);
+                // location.reload();//??
+            });
+            // location.reload();  //??
+        }
+        addDataInTable();
+
+        // deleting a data
+        function deleteData(index) {
+            // let data = arr[index];
+            // console.log(data);
+            arr.splice(index, 1);
+            localStorage.setItem("key", JSON.stringify(arr));
+            location.reload();
+        }
+
+        // changing the set data i.e. editing the data
+        function editData(index) {
+            // console.log(index);  stores index number
+            let data = arr[index];  // arr[index] stores the value i.e. username aand password  
+            console.log(data);
+            document.getElementById("newusername").value = data.username;
+            document.getElementById("newpassword").value = data.password;
+            document.getElementById("index").value = index;
+        }
+
+        // after editing saving the data i.e. set item
+        function updateData() {
+            let username = document.getElementById("newusername").value;
+            let password = document.getElementById("newpassword").value;
+            let index = document.getElementById("index").value;
+
+            let data = {
+                username,
+                password
+            };
+            arr.splice(index, 1, data);
+
+            localStorage.setItem("key", JSON.stringify(arr));
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

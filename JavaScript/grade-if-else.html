@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+	
+	let maths =  parseInt(prompt("Enter Marks of Maths :"));
+	let eng =  parseInt(prompt("Enter Marks of English :"));
+	let hindi =  parseInt(prompt("Enter Marks of Hindi :"));
+	let guj =  parseInt(prompt("Enter Marks of Gujrati :"));
+	let comp =  parseInt(prompt("Enter Marks of Computer :"));
+
+	let sum = maths + eng + hindi + guj + comp;
+	let percent = sum/5;
+
+	console.log("Percentage : ",percent);
+	
+		if(percent>=85 && percent<=100){
+			console.log("Grade A");
+		}
+		else if(percent>=70 && percent<85){
+			console.log("Grade B");
+		}
+		else if(percent>=55 && percent<70){
+			console.log("Grade C");
+		}
+		else if(percent>=40 && percent<55){
+			console.log("Grade D");
+		}
+		else{
+			console.log("Grade E");
+		}
+    </script>
+</body>
+</html>

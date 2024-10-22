@@ -1,0 +1,479 @@
+@font-face {
+    font-family: 'Arial Th';
+    src: url('../fonts/ArialTh.woff2') format('woff2'),
+        url('../fonts/ArialTh.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial Narrow';
+    src: url('../fonts/ArialNarrow.woff2') format('woff2'),
+        url('../fonts/ArialNarrow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial GEO';
+    src: url('../fonts/ArialGEOItalic.woff2') format('woff2'),
+        url('../fonts/ArialGEOItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geo_Arial';
+    src: url('../fonts/GeoArialItalic.woff2') format('woff2'),
+        url('../fonts/GeoArialItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ArialMT.woff2') format('woff2'),
+        url('../fonts/ArialMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial MT';
+    src: url('../fonts/ArialMTBlack.woff2') format('woff2'),
+        url('../fonts/ArialMTBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial GEO';
+    src: url('../fonts/ArialGEOBold.woff2') format('woff2'),
+        url('../fonts/ArialGEOBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/**
+ * @license
+ *
+ * Font Family: General Sans
+ * Designed by: Frode Helland
+ * URL: https://www.fontshare.com/fonts/general-sans
+ * © 2022 Indian Type Foundry
+ *
+ * Font Styles:
+ * General Sans Variable(Variable font)
+ * General Sans Variable Italic(Variable font)
+ * General Sans Extralight
+ * General Sans Extralight Italic
+ * General Sans Light
+ * General Sans Light Italic
+ * General Sans Regular
+ * General Sans Italic
+ * General Sans Medium
+ * General Sans Medium Italic
+ * General Sans Semibold
+ * General Sans Semibold Italic
+ * General Sans Bold
+ * General Sans Bold Italic
+ *
+*/
+
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Variable.woff') format('woff'),
+         url('../fonts/GeneralSans-Variable.ttf') format('truetype');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  /**
+  * This is a variable font
+  * You can controll variable axes as shown below:
+  * font-variation-settings: 'wght' 700.0;
+  *
+  * available axes:
+  
+  * 'wght' (range from 200.0 to 700.0)
+  
+  */
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
+         url('../fonts/GeneralSans-VariableItalic.woff') format('woff'),
+         url('../fonts/GeneralSans-VariableItalic.ttf') format('truetype');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-Extralight.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Extralight.woff') format('woff'),
+         url('../fonts/GeneralSans-Extralight.ttf') format('truetype');
+         font-weight: 200;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-ExtralightItalic.woff2') format('woff2'),
+         url('../fonts/GeneralSans-ExtralightItalic.woff') format('woff'),
+         url('../fonts/GeneralSans-ExtralightItalic.ttf') format('truetype');
+         font-weight: 200;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-Light.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Light.woff') format('woff'),
+         url('../fonts/GeneralSans-Light.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-LightItalic.woff2') format('woff2'),
+         url('../fonts/GeneralSans-LightItalic.woff') format('woff'),
+         url('../fonts/GeneralSans-LightItalic.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Regular.woff') format('woff'),
+         url('../fonts/GeneralSans-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-Italic.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Italic.woff') format('woff'),
+         url('../fonts/GeneralSans-Italic.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Medium.woff') format('woff'),
+         url('../fonts/GeneralSans-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-MediumItalic.woff2') format('woff2'),
+         url('../fonts/GeneralSans-MediumItalic.woff') format('woff'),
+         url('../fonts/GeneralSans-MediumItalic.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-Semibold.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Semibold.woff') format('woff'),
+         url('../fonts/GeneralSans-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-SemiboldItalic.woff2') format('woff2'),
+         url('../fonts/GeneralSans-SemiboldItalic.woff') format('woff'),
+         url('../fonts/GeneralSans-SemiboldItalic.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-Bold.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Bold.woff') format('woff'),
+         url('../fonts/GeneralSans-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-BoldItalic.woff2') format('woff2'),
+         url('../fonts/GeneralSans-BoldItalic.woff') format('woff'),
+         url('../fonts/GeneralSans-BoldItalic.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest-Bold.woff2') format('woff2'),
+        url('../fonts/Onest-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Onest-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Onest-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest-SemiBold.woff2') format('woff2'),
+        url('../fonts/Onest-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest-Regular.woff2') format('woff2'),
+        url('../fonts/Onest-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest-Medium.woff2') format('woff2'),
+        url('../fonts/Onest-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest-Black.woff2') format('woff2'),
+        url('../fonts/Onest-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest-Light.woff2') format('woff2'),
+        url('../fonts/Onest-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('../fonts/Onest-Thin.woff2') format('woff2'),
+        url('../fonts/Onest-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Variable.woff2') format('woff2'),
+         url('../fonts/Satoshi-Variable.woff') format('woff'),
+         url('../fonts/Satoshi-Variable.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-VariableItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-VariableItalic.woff') format('woff'),
+         url('../fonts/Satoshi-VariableItalic.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
+         url('../fonts/Satoshi-Light.woff') format('woff'),
+         url('../fonts/Satoshi-Light.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-LightItalic.woff') format('woff'),
+         url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+         font-weight: 300;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('../fonts/Satoshi-Regular.woff') format('woff'),
+         url('../fonts/Satoshi-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Italic.woff2') format('woff2'),
+         url('../fonts/Satoshi-Italic.woff') format('woff'),
+         url('../fonts/Satoshi-Italic.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+         url('../fonts/Satoshi-Medium.woff') format('woff'),
+         url('../fonts/Satoshi-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+         url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('../fonts/Satoshi-Bold.woff') format('woff'),
+         url('../fonts/Satoshi-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-BoldItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-BoldItalic.woff') format('woff'),
+         url('../fonts/Satoshi-BoldItalic.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+         url('../fonts/Satoshi-Black.woff') format('woff'),
+         url('../fonts/Satoshi-Black.ttf') format('truetype');
+         font-weight: 900;
+         font-display: swap;
+         font-style: normal;
+  }
+  
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-BlackItalic.woff2') format('woff2'),
+         url('../fonts/Satoshi-BlackItalic.woff') format('woff'),
+         url('../fonts/Satoshi-BlackItalic.ttf') format('truetype');
+         font-weight: 900;
+         font-display: swap;
+         font-style: italic;
+  }
+  
+  
+  
+

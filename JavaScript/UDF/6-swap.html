@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping</title>
+</head>
+<body>
+    <h2>6. Write a javascript Program to perform a swapping of two variables.(all function use)</h2>
+    <script>
+
+        function num(a,b) {
+            // values before swapping
+            console.log("values before swapping");
+            console.log("A :",a);
+            console.log("B :",b);
+
+            a = a + b;
+	        b = a - b;
+	        a = a - b;
+
+           // values after swapping
+           console.log("values after swapping");
+           console.log("A :",a);
+           console.log("B :",b);
+        }
+        
+      num(20,10); // function calling
+    </script>
+</body>
+</html>

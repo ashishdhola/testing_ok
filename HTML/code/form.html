@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form method="post">
+        <h1 align="center">Register</h1>
+        <hr>
+        <hr>
+
+        <b><label>Name*:-</label></b>
+        <input type="text" name="fname" placeholder="First Name" required>
+        <input type="text"  name="lname" placeholder="Last Name" required>
+        <hr>
+
+        <b><label> Phone:-</label></b>
+        <select>
+            <option>+91</option>
+            <option>+93</option>
+            <option>+355</option>
+            <option>+1</option>
+            <option>+244</option>
+            <option>+54</option>
+            <option>+225</option>
+            <option>+679</option>
+            <option>+33</option>
+            <option>+689</option>
+            <option>+81</option>
+            <option>+7</option>
+            <option>+254</option>
+
+        </select>
+        <input type="tel" pattern="[0-9]{10}">
+        <hr>
+
+        <b><label> Email*:-</label></b>
+        <input type="email" placeholder="example@gmail.com" />
+        <hr>
+
+        <b><label> Address*:-</label></b>
+        <textarea cols="20" rows="2" required></textarea>
+        <hr>
+
+        <b><label> Gender:-</label></b>
+        <label>
+            <input type="radio" name="gender"> Male
+        </label>
+
+        <label>
+            <input type="radio" name="gender"> Female
+        </label>
+
+        <label>
+            <input type="radio" name="gender"> Other
+        </label>
+        <hr>
+
+        <b><label>Profile Photo:-</label></b>
+        <input type="file">
+        <hr>
+
+        <b><label>Birthday:-</label></b>
+        <input type="date">
+        <hr>
+
+        <b><label>Hobby:-</label><br></b>
+        <label><input type="checkbox">Cricket</label>
+        <br>
+        <label><input type="checkbox">Travelling</label>
+        <br>
+        <label> <input type="checkbox">Reading</label>
+        <br>
+        <label><input type="checkbox">Music</label>
+        <br>
+        <hr>
+        <hr>
+        <h2 align="center">Login Details</h2>
+        <hr>
+        <hr>
+
+        <b><label>Username*:-</label></b>
+        <input type="text" required>
+        <hr>
+
+        <b><label>Password*:-</label></b>
+        <input type="password" required>
+        <hr>
+
+        <b><label>Confirm Password*:-</label></b>
+        <input type="password" required>
+        <hr>
+        <hr>
+
+        <button type="submit" name="submit">SUBMIT</button>
+        <button type="reset" name="submit">RESET</button>
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>

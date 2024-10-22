@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Heyy! I provide weather details" spellcheck="false" />
+            <button>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon class="search-icon" src="https://cdn.lordicon.com/jtkfemwz.json" trigger="hover"
+                    stroke="bold"></lord-icon>
+                </lord-icon>
+            </button>
+        </div>
+        <div class="error">
+            <p>
+                Invalid city name!
+            </p>
+        </div>
+        <div class="weather">
+            <img src="./images/rain.png" class="weather-icon icon" alt="This is an image" srcset="">
+            <h1 class="temp">
+                22°C
+            </h1>
+            <h2 class="city">
+                Kanpur
+            </h2>
+            <div class="details">
+                <div class="col">
+                    <img src="https://www.svgrepo.com/show/26690/humidity.svg" class="icon humidity-icon" alt=""
+                        srcset="">
+                    <div class="icon-text">
+                        <p>Humidity</p>
+                        <p class="humidity">50%</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://www.svgrepo.com/show/14493/wind.svg" class="wind-icon icon" srcset="">
+                    <div class="icon-text">
+                        <p>Wind Speed</p>
+                        <p class="wind">15km/hr</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const apiKey = "a516a792024accb77f34519e395792f4";
+        const apiUrl =
+            "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+        const appId = `&appid=${apiKey}`;
+        const searchBox = document.querySelector(".search input");
+        const searchBtn = document.querySelector(".search button");
+        const weatherIcon = document.querySelector(".weather-icon");
+
+        async function checkWeather(city) {
+            const response = await fetch(apiUrl + city + appId);
+
+            if (response.status == "404") {
+                document.querySelector(".error").style.display = "block";
+                document.querySelector(".weather").style.display = "none";
+            } else {
+                var data = await response.json();
+
+                document.querySelector(".city").innerHTML = data.name;
+                document.querySelector(".temp").innerHTML =
+                    Math.round(data.main.temp) + "°C";
+                document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+                document.querySelector(".wind").innerHTML = data.wind.speed + " kmph";
+
+                if (data.weather[0].main == "Clear") {
+                    weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-1.svg";
+                } else if (data.weather[0].main == "Clouds") {
+                    weatherIcon.src = "	https://c.tadst.com/gfx/w/svg/wt-7.svg";
+                } else if (data.weather[0].main == "Drizzle") {
+                    weatherIcon.src = "	https://c.tadst.com/gfx/w/svg/wt-34.svg";
+                } else if (data.weather[0].main == "Mist") {
+                    weatherIcon.src = "	https://c.tadst.com/gfx/w/svg/wt-17.svg";
+                } else if (data.weather[0].main == "Rain") {
+                    weatherIcon.src = "https://c.tadst.com/gfx/w/svg/wt-19.svg";
+                } else if (data.weather[0].main == "Snow") {
+                    weatherIcon.src = "	https://c.tadst.com/gfx/w/svg/wt-30.svg";
+                }
+
+                document.querySelector(".weather").style.display = "block";
+                document.querySelector(".error").style.display = "none";
+                console.log(data);
+            }
+        }
+
+        searchBtn.addEventListener("click", () => {
+            checkWeather(searchBox.value);
+        });
+
+    </script>
+</body>
+
+</html>

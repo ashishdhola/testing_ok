@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+</head>
+
+<body>
+    <script>
+        function factorial(number) {
+            if (number === 1) {
+                return 1;
+            }
+            return number * factorial(number - 1);
+        }
+
+        let a = factorial(3);
+        console.log(a);
+    </script>
+</body>
+
+</html>

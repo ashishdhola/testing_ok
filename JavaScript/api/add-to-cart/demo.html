@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+</head>
+
+<body>
+    <input type="text" id="search" placeholder="search">
+    <div class="card">
+    </div>
+    <button id="search">search</button>
+
+
+</body>
+<script>
+    let arr = JSON.parse(localStorage.getItem("key")) || []
+    // let search = document.querySelector("#search");
+        // let search = document.getElementById("search").value;
+        // let productTitle = document.querySelector(".productTitle").value;
+
+        // let productDescription = document.createElement(".productDescription");
+        // let productPrice = document.createElement(".productPrice");
+        // let productSize = document.createElement(".productSize");
+        // let productQuantity = document.createElement(".productQuantity");
+        // let productColor = document.createElement(".productColor");
+
+        let data = {
+            search
+            // productDescription,
+            // productPrice,
+            // productSize,
+            // productQuantity,
+            // productColor
+        }
+        arr.push(data);
+        localStorage.setItem("key", JSON.stringify(arr));
+        location.reload();
+        console.log(data);
+
+        function createCard() {
+            let card = document.querySelector(".card");
+            arr.map((val, index) => {
+                let productTitle = document.createElement(".productTitle");
+                productTitle = innnerHtml = `${val.search}`;
+                card.appendChild(productTitle);
+            });
+        }
+        createCard();
+    
+</script>
+
+<!-- <script>
+    let arr = [
+        {
+            name: "tshirt",
+            description: "Typography Printed Drop-Shoulder Sleeves Pure Cotton Longline T-shirt",
+            sizes: ["Small", "Medium", "Large"],
+            price: 599,
+            color: "Silver",
+            image: "images/top1.avif"
+        },
+        {
+            name: "Toaster",
+            description: "A 2-slice toaster with variable browning control.",
+            size: "Compact",
+            price: 24.99,
+            color: "Black",
+        },
+    ];
+    // let arr = JSON.parse(localStorage.getItem("key")) || [];
+
+    function search() {
+        let searchTerm = document.getElementById("search").value.toLowerCase(); // Get search term in lowercase
+        let data = {
+            search: searchTerm // Store search term in data object
+        };
+        localStorage.setItem("key", JSON.stringify(arr)); // Save existing data
+        displayProducts(data.search); // Call function to display products
+    }
+
+
+    function displayProducts(searchTerm) {
+        const card = document.querySelector(".card");
+        card.innerHTML = ""; // Clear previous content
+
+        arr.forEach((product, index) => {
+            if (product.name.toLowerCase().includes(searchTerm)) { // Search by product name
+                const productCard = document.createElement("div");
+                productCard.classList.add("product"); // Add a class for styling
+
+                // Create elements for product details (name, description, size, price, color)
+                const productName = document.createElement("h3");
+                productName.textContent = product.name;
+
+                const productDescription = document.createElement("p");
+                productDescription.textContent = product.description;
+
+                const productSize = document.createElement("p");
+                productSize.textContent = product.size;
+
+                const productImage = document.createElement("img");
+                productImage.src = product.image;
+
+                // ... (create elements for size, price, and color)
+
+                // Add product details to the card element
+                productCard.appendChild(productName);
+                productCard.appendChild(productDescription);
+                productCard.appendChild(productSize);
+                productCard.appendChild(productImage);
+
+                // ... (append elements for size, price, and color)
+
+                card.appendChild(productCard);
+
+                const sizeSelection = document.createElement("div");
+                sizeSelection.classList.add("size-selection"); // Add a class for styling
+
+                product.sizes.forEach(size => {
+                    const sizeRadio = document.createElement("input");
+                    sizeRadio.type = "radio";
+                    sizeRadio.name = `size-${product.name}`; // Use product name for unique identifier
+                    sizeRadio.value = size;
+                    sizeRadio.id = `size-${product.name}-${size}`; // Unique ID for label association
+
+                    const sizeLabel = document.createElement("label");
+                    sizeLabel.textContent = size;
+                    sizeLabel.htmlFor = `size-${product.name}-${size}`; // Link label to radio button
+
+                    sizeSelection.appendChild(sizeRadio);
+                    sizeSelection.appendChild(sizeLabel);
+                });
+
+                productCard.appendChild(sizeSelection);
+            }
+        });
+    }
+
+</script> -->
+
+</html>

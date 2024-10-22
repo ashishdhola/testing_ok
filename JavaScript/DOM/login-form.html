@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <h2>Login Details</h2>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" required>
+    <p id="error"></p>
+    <h3 id="output"></h3>
+
+    <button type="submit" name="submit" onclick="submit()">SUBMIT</button>
+
+    <script>
+        function submit() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (username !== '' && password !== '' && confirmPassword !== '') {
+
+                if (password === confirmPassword) {
+                    document.getElementById("output").innerHTML = "Login Successful";
+                    window.location.href = "register-form.html";
+                }
+                else {
+                    document.getElementById("error").innerHTML = "Please enter correct Password";
+                }
+            }
+            else {
+                document.getElementById("error").innerHTML = "Please Fill All The Details";
+            }
+        }
+    </script>
+
+    <!-- <script>
+         function myFunction() {
+      window.location.href = "register-form.html";
+         }
+    </script> -->
+    <!-- <button onclick="window.location.href = 'register-form.html';">HOME</button> -->
+    <!-- <input type="submit" onClick="myFunction()" value="HOME" class="button" /> -->
+
+</body>
+
+</html>

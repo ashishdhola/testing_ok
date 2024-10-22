@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+ } 
+.solid{
+    width: 200px;
+    height: 200px;
+    background-color: #ff8989;
+    border: 10px #fcaeae ;
+    display: inline-block;
+    border-style:solid ;
+    margin: 10px;
+    border-radius: 100px 100px 0px 0px;
+}
+
+.double{
+    width: 200px;
+    height: 200px;
+    background-color:aqua;
+    border: 10px #0d344f ;
+    display: inline-block;
+    border-style: double;
+    margin: 10px;
+    border-radius: 0px 0px 100px 100px;
+}
+
+
+.dotted{
+    width: 200px;
+    height: 200px;
+    background-color:teal;
+    border: 10px #c9d0a7 ;
+    display: inline-block;
+    border-style: dotted;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+
+.dashed{
+    width: 400px;
+    height: 200px;
+    background-color:rgb(85, 0, 137);
+    border: 10px #d0c3f0 ;
+    display: inline-block;
+    border-style: dashed;
+    margin: 10px;
+}
+
+
+.groove{
+    width: 200px;
+    height: 200px;
+    background-color:orangered;
+     border: 10px #ff975e ;
+    display: inline-block;
+    border-style: groove;
+    margin: 10px;
+    
+}
+
+
+.inset{
+    width: 200px;
+    height: 200px;
+    background-color:rgb(78, 0, 92);
+     border: 10px rgb(255, 243, 136) ;
+    display: inline-block;
+    border-style: inset;
+    margin: 10px;
+    border-radius: 0% 50%;
+}
+
+
+.outset{
+    width: 200px;
+    height: 200px;
+    background-color:blue;
+     border: 10px #fcaeae ;
+    display: inline-block;
+    border-style: outset;
+    margin: 10px;
+    border-radius: 50% 0%;
+}
+
+
+.ridge{
+    width: 200px;
+    height: 200px;
+    background-color:deeppink;
+     border: 10px #fcaeae ;
+    display: inline-block;
+    border-style: ridge;
+    margin: 10px;
+}
+
+
+.mix{
+    width: 200px;
+    height: 200px;
+    background-color:rgb(225, 0, 255);
+     border: 10px #31fff8 ;
+    display: inline-block;
+    border-style: solid double dashed groove ;
+    margin: 10px;
+}
+
+
+.hidden{
+    width: 200px;
+    height: 200px;
+    background-color:lawngreen;
+     border: 10px #5a8143 ;
+    display: inline-block;
+    border-style: hidden;
+    margin: 10px;
+}
+
+
+.none{
+    width: 200px;
+    height: 200px;
+    background-color:forestgreen;
+     border: 10px #31a6a2 ;
+    display: inline-block;
+    border-style: none;
+    margin: 10px;
+}
+
+.tri{
+    width: 200px;
+    height: 200px;
+    /* border-left: 100px solid  transparent;
+    border-right: 100px solid  transparent; */
+    /* border-bottom: 200px double rgb(9, 255, 46); */
+    background-color: red;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    /* clip path website to make different shapes */
+}
+

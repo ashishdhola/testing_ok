@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+body {
+    background: #1d1f20;
+  }
+
+  /* .box{
+    margin-top: 5%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 15px 15px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 300px;
+    background: #343436;
+    position: relative;
+  }
+
+
+
+  .box:before{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    content: "";
+    background: rgba(255,255,255,0.1);
+    transition: .3s ease-in;
+
+
+  }
+
+  .box:hover{
+    background: #77777a;
+  } */
+
+
+  .button4 {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em auto;
+    background: #343436;
+    max-width: 300px;
+    /* z-index: 0; */
+    position: relative;
+    padding: 2em;
+    /* overflow: hidden; */
+  }
+  
+  .button4:before {
+    /* z-index: 1; */
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    content: "";
+    background: rgba(255,255,255,0.1);
+    transition: .5s ease-in;
+  }
+  
+  .button4:hover:before {
+    left: 0%;
+    transition: .5s ease-out;
+  }
+/*   
+   .button4:after { 
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100%;
+    content: "";
+    background: rgba(255,255,255,0.1);
+    transition: 0.5s ease-in;
+  }
+  
+  .button4:hover:after {
+    left: 50%;
+    transition: .5s ease-out;
+  }  */
+

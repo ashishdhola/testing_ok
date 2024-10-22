@@ -1,0 +1,15 @@
+.close-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.close {
+    border-right: 1px solid #d3d2d2;
+    padding: 0px 8px 0px 7px;
+    color: #d3d2d2;
+}
+
+.star {
+    font-size: 20px;
+    margin: 5px;
+}

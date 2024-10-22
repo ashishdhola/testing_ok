@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-to-cart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar bg-success-subtle">
+        <form class="container-fluid justify-content-end">
+            <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img
+                    src="images/shopping-cart.png" />
+                <span class="badge text-bg-dark" id="cartCount"></span>
+            </button>
+        </form>
+    </nav>
+    <!-- ========card============= -->
+    <div class="card mb-3" style="max-width: 540px; float: left;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="images/top1.avif" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title productTitle">T-shirt</h5>
+                    <p class="card-text productDescription">Typography Printed Drop-Shoulder Sleeves Pure Cotton
+                        Longline T-shirt
+                    </p>
+                    <p class="card-text productColor">Color : Pink
+                    </p>
+                    <p class="card-text">Sizes :
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-S" autocomplete="off"
+                            value="S">
+                        <label class="btn btn-outline-success" for="success-outlined-S">S</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-M" autocomplete="off"
+                            value="M">
+                        <label class="btn btn-outline-success" for="success-outlined-M">M</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-L" autocomplete="off"
+                            value="L">
+                        <label class="btn btn-outline-success" for="success-outlined-L">L</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-XL" autocomplete="off"
+                            value="XL">
+                        <label class="btn btn-outline-success" for="success-outlined-XL">XL</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-XXL" autocomplete="off"
+                            value="XXL">
+                        <label class="btn btn-outline-success" for="success-outlined-XXL">XXL</label>
+                    </p>
+                    <p class="card-text productPrice">599</p>
+
+                    <!-- Quantity -->
+                    <div class="countDown d-flex mb-2">
+                        <button id="increment" class="btn btn-dark rounded-circle">+</button>
+                        <div id="countValue" class="d-flex align-items-center px-3">1</div>
+                        <button id="decrement" class="btn btn-dark rounded-circle">-</button>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" id="addToCart">Add To Cart</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3" style="max-width: 540px; float: left;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="images/top2.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title productTitle">T-shirt</h5>
+                    <p class="card-text productDescription">Typography Printed Drop-Shoulder Sleeves Pure Cotton
+                        Longline T-shirt
+                    </p>
+                    <p class="card-text productColor">Color : Pink
+                    </p>
+                    <p class="card-text">Sizes :
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-S" autocomplete="off"
+                            value="S">
+                        <label class="btn btn-outline-success" for="success-outlined-S">S</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-M" autocomplete="off"
+                            value="M">
+                        <label class="btn btn-outline-success" for="success-outlined-M">M</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-L" autocomplete="off"
+                            value="L">
+                        <label class="btn btn-outline-success" for="success-outlined-L">L</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-XL" autocomplete="off"
+                            value="XL">
+                        <label class="btn btn-outline-success" for="success-outlined-XL">XL</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-XXL" autocomplete="off"
+                            value="XXL">
+                        <label class="btn btn-outline-success" for="success-outlined-XXL">XXL</label>
+                    </p>
+                    <p class="card-text productPrice">599</p>
+
+                    <!-- Quantity -->
+                    <div class="countDown d-flex mb-2">
+                        <button id="increment" class="btn btn-dark rounded-circle">+</button>
+                        <div id="countValue" class="d-flex align-items-center px-3">1</div>
+                        <button id="decrement" class="btn btn-dark rounded-circle">-</button>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" id="addToCart">Add To Cart</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="images/top3.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title productTitle">T-shirt</h5>
+                    <p class="card-text productDescription">Typography Printed Drop-Shoulder Sleeves Pure Cotton
+                        Longline T-shirt
+                    </p>
+                    <p class="card-text productColor">Color : Pink
+                    </p>
+                    <p class="card-text">Sizes :
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-S" autocomplete="off"
+                            value="S">
+                        <label class="btn btn-outline-success" for="success-outlined-S">S</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-M" autocomplete="off"
+                            value="M">
+                        <label class="btn btn-outline-success" for="success-outlined-M">M</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-L" autocomplete="off"
+                            value="L">
+                        <label class="btn btn-outline-success" for="success-outlined-L">L</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-XL" autocomplete="off"
+                            value="XL">
+                        <label class="btn btn-outline-success" for="success-outlined-XL">XL</label>
+
+                        <input type="radio" class="btn-check" name="size" id="success-outlined-XXL" autocomplete="off"
+                            value="XXL">
+                        <label class="btn btn-outline-success" for="success-outlined-XXL">XXL</label>
+                    </p>
+                    <p class="card-text productPrice">599</p>
+
+                    <!-- Quantity -->
+                    <div class="countDown d-flex mb-2">
+                        <button id="increment" class="btn btn-dark rounded-circle">+</button>
+                        <div id="countValue" class="d-flex align-items-center px-3">1</div>
+                        <button id="decrement" class="btn btn-dark rounded-circle">-</button>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" id="addToCart">Add To Cart</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Cart <img src="images/shopping-cart.png"
+                    alt=""></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body"></div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+
+
+
+</body>
+
+</html>

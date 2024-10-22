@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>at()</title>
+</head>
+
+<body>
+    <h2>The at() method returns the same as [].</h2>
+    <script>
+        //Get the third element of fruits using at():
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let ans = fruits.at(2);
+        console.log(ans);
+
+        //Get the third element of fruits using []:
+        let ans2 = fruits[2];
+        console.log(ans2);
+
+        // ==========
+        console.log(fruits.at(-1));
+        console.log(fruits[-1]);
+    </script>
+</body>
+
+</html>

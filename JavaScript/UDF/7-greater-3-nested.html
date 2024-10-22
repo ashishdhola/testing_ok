@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greatest-3-nested</title>
+</head>
+<body>
+    <h2>7. Write a JavaScript program to find which number is greater in 3 numbers using nested if else.(using all function)</h2>
+    <script>
+        function num(a,b,c) {
+            console.log("A :",a);
+            console.log("B :",b);
+            console.log("C :",c);
+
+            if(a>b){ //main if
+                if(a>c){
+                    console.log("First Number is Greatest");
+                }
+                else{
+                    console.log("Third Number is Greatest");
+                }
+            }
+            else{ //main else
+                if(b>c){
+                    console.log("Second Number is Greatest");
+                }
+                else{
+                    console.log("Third Number is Greatest");
+                }
+            }   
+        }
+
+        num(66,54,39); // function calling
+    </script>
+</body>
+</html>

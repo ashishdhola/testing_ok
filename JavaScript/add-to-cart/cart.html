@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-FwhvBsFDALxHkNtogZCsBtT GaineszrYBxQhcyNHuQeU8fLwWIkEY+vFUcs+gqaAlb4!"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-success-subtle">
+        <form class="container-fluid justify-content-end">
+            <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <img src="images/shopping-cart.png" alt="" />
+                <span class="badge bg-dark text-white rounded-pill" id="cartCount">0</span>
+            </button>
+        </form>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="images/top1.avif" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">T-shirt</h5>
+                        <p class="card-text">Typography Printed Drop-Shoulder Sleeves Pure Cotton Longline T-shirt</p>
+                        <p class="card-text">Color : Pink</p>
+                        <p class="card-text">Sizes :
+                            <input type="radio" class="btn-check" name="size" id="success-outlined-S" autocomplete="off"
+                                value="S">
+                            <label class="btn btn-outline-success" for="success-outlined-S">S</label>
+
+                            <input type="radio" class="btn-check" name="size" id="success-outlined-M" autocomplete="off"
+                                value="M">
+                            <label class="btn btn-outline-success" for="success-outlined-M">M</label>
+
+                            <input type="radio" class="btn-check" name="size" id="success-outlined-L" autocomplete="off"
+                                value="L">
+                            <label class="btn btn-outline-success" for="success-outlined-L">L</label>
+
+                            <input type="radio" class="btn-check" name="size" id="success-outlined-XL"
+                                autocomplete="off" value="XL">
+                            <label class="btn btn-outline-success" for="success-outlined-XL">XL</label>
+
+                            <input type="radio" class="btn-check" name="size" id="success-outlined-XXL"
+                                autocomplete="off" value="XXL">
+                            <label class="btn btn-outline-success" for="success-outlined-XXL">XXL</label>
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary"><b>Rs. 599</b></small></p>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <button id="decrement" class="btn btn-dark rounded-circle">-</button>
+                            <div id="countValue" class="d-flex align-items-center px-3">0</div>
+                            <button id="increment" class="btn btn-dark rounded-circle">+</button>
+                        </div>
+
+                        <button class="btn btn-outline-success" id="addToCart" type="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+
+    </div>
+    <script>
+        const addToCartButton = document.getElementById('addToCart');
+        const cartCountElement = document.getElementById('cartCount');
+        const countValueElement = document.getElementById('countValue');
+
+        let cartData = []; // Array to store cart items
+
+        // Function to update cart count badge
+        function updateCartCount() {
+            cartCountElement.textContent = cartData.length;
+        }
+
+        // Function to add item to cart
+        function addToCart() {
+            const selectedSize = document.querySelector('input[name="size"]:checked');
+            if (!selectedSize) {
+                alert('Please select a size!');
+                return;
+            }
+
+            const product = {
+                name: "T-shirt", // Assuming product name is static here
+                color: "Pink", // Assuming color is static here
+                size: selectedSize.value,
+                quantity: parseInt(countValueElement.textContent),
+                price: 599 // Assuming price is static here
+            };
+
+            cartData.push(product);
+            updateCartCount();
+
+            // You can implement logic here to store cart data in local storage
+            // (consider functions explained previously for saving and retrieving data)
+
+            // Reset quantity to 0
+            countValueElement.textContent = 0;
+        }
+
+        // Function to increment/decrement quantity
+        function changeQuantity(operation) {
+            let currentQuantity = parseInt(countValueElement.textContent);
+            if (operation === 'increment') {
+                currentQuantity++;
+            } else if (operation === 'decrement' && currentQuantity > 0) {
+                currentQuantity--;
+            }
+            countValueElement.textContent = currentQuantity;
+        }
+
+        // Event listeners\
+        // const addToCartButton = document.getElementById('addToCart');
+
+        addToCartButton.addEventListener('click', addToCart);
+
+        // addToCartButton.addEventListener('click', addToCart);
+        document.getElementById('increment').addEventListener('click', () => changeQuantity('increment'));
+        document.getElementById('decrement').addEventListener('click', () => changeQuantity('decrement'));
+
+        // Update cart count on page load (optional)
+        updateCartCount(); // Consider fetching data from local storage if implemented
+
+        // You can add functions here to display cart items and calculate total bill
+        // (consider functions explained previously for displaying cart and calculating total)
+
+    </script>
+
+</body>
+
+</html>

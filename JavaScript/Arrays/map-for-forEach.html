@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map-for-forEach</title>
+</head>
+
+<body>
+    <script>
+        /*=============forEach============*/
+        console.log("forEach");
+
+        let arr = [10, 20, 30, 40];
+        // console.log(arr);
+
+        arr.forEach((value, index, arr) => {
+            console.log(value, index, arr);
+            // console.log(arr);
+        });
+
+        let demo = arr.forEach((val) => {
+            // return val*2;  //undefined bcoz forEach doesn't return
+            console.log(val*2);
+        });
+        console.log(demo);
+
+        /*=============map============*/
+        console.log("map");
+
+        let arr2 = [1,2,3,4];
+
+        arr2.map((value, index, arr) => {
+            console.log(value, index, arr);
+        });
+
+        let abc = arr2.map((val) => {
+            return val*val; 
+        });
+        console.log(abc);
+        console.log(arr2);//returns a new array i.e. the orignal array remains the same 
+
+
+    </script>
+</body>
+
+</html>

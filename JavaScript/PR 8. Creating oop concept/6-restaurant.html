@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <h2>6. Write a Javascript program to create a class called "Restaurant" with attributes for menu items, prices, and
+        ratings, and methods to add and remove items, and to calculate average rating.</h2>
+    <script>
+        class Restaurant {
+            constructor() {
+                this.menuItems = {
+                    Chai: 10,
+                    Samosa: 50,
+                    Uttapam: 110,
+                    MasalaDosa: 80,
+                    chapati: 8,
+                    DalMakhani: 200,
+                    Biryani: 150,
+                    gujratiThali: 250,
+                    water: 20,
+                };
+            }
+            addItems(itemName) {
+                for (const item of itemName) {
+                    if (this.menuItems.hasOwnProperty(item)) {
+                        console.log(`${item} added to your order.`);
+                    } else {
+                        console.log(`Sorry, we don't have ${item} on the menu.`);
+                    }
+                }
+            }
+
+            removeItems(items) {
+                for (const item of items) {
+                    if (this.menuItems.hasOwnProperty(item)) {
+                        console.log(`${item} removed from the menu.`);
+                    }
+                    else {
+                        console.log(`${item} was already not on the menu.`);
+                    }
+                }
+            }
+
+            averageRating(rating) {
+                if (rating < 0 || rating > 5) {
+                    console.error("Invalid rating. Please enter a value between 0 and 5.");
+                    return;
+                }
+                console.log("Thank you for your rating!");
+            }
+        }
+        const restaurant = new Restaurant();
+        restaurant.addItems(["Chai", "Samosa", "butter paneer"]);
+        restaurant.removeItems(["Samosa", "water"]);
+
+        let rating = parseInt(prompt("Enter rating"));
+        restaurant.averageRating(rating);
+
+    </script>
+</body>
+
+</html>

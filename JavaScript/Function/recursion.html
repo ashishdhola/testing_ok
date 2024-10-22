@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recursion</title>
+</head>
+
+<body>
+    <script>
+        // function name(n) {
+
+        //     if(n==0){
+        //         return false;
+        //     }
+        //     console.log(n);
+        //     name(n-1);
+
+        // }
+        // name(5);
+
+        function name(n) {
+
+            while (n == 0) {
+                return false;
+            }
+            console.log(n);
+            name(n - 1);
+        }
+        name(5);
+       
+    </script>
+</body>
+
+</html>

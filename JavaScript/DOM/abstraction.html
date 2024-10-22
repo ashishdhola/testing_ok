@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstraction</title>
+</head>
+
+<body>
+    <script>
+        function employee(name, salary) {
+            this.name = name;
+            this.salary = salary;
+            let bonus = () => {
+                return (this.salary * 10) / 100;  // 10% bonus
+            };
+
+            this.printSalary = () => {
+                let extra = bonus();
+                console.log(`Salary of ${name} is ${extra + this.salary}`);
+            }
+        }
+
+        let res = new employee("dhvani", 20000);
+        res.printSalary();
+
+    </script>
+</body>
+
+</html>

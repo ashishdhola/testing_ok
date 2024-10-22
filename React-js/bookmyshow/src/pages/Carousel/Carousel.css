@@ -1,0 +1,23 @@
+.pagination-main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.demo {
+    padding: 0px 0px 32px;
+    background-color: black;
+}
+
+.abc {
+    background-image: url('./src/images/carousel_bg_img');
+    min-height: calc(317.949px);
+}
+
+.xyz {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    height: 307px;
+    width: 100%;
+}

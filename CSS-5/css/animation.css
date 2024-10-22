@@ -1,0 +1,170 @@
+h2{
+    font-size: 40px;
+    /* text-align: center; */
+    display: inline-block;
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    background-color: darkmagenta;
+    display: inline-block;
+}
+
+.box img{
+    width: 100%;
+    max-height: 100%;
+}
+
+.rotate:hover img{
+    transform: rotate(10deg);
+    transition: all 0.5s;
+}
+
+.rotateX:hover img{
+    transform: rotateX(180deg);
+    transition: all 0.5s;
+}
+
+.rotateY:hover img{
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+}
+
+/* -------------------------SKEW----------------------------- */
+
+.skew:hover img{
+    transform: skew(20deg);
+    transition: all 0.5s;
+}
+
+.skewX:hover img{
+    transform: skewX(20deg);
+    transition: all 0.5s;
+}
+
+.skewY:hover img{
+    transform: skewY(10deg);
+    transition: all 0.5s;
+}
+
+/* -------------------------SCALE----------------------------- */
+
+.Scale:hover img{
+    transform: Scale(2);
+    transition: all 0.5s;
+}
+
+.ScaleX:hover img{
+    transform: ScaleX(5);
+    transition: all 0.5s;
+}
+
+.ScaleY:hover img{
+    transform: ScaleY(2);
+    transition: all 0.5s;
+}
+
+/* ----------------------Translate----------------------------- */
+
+.box2{
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    margin: auto;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transform: translate(-50px, -50px);
+}
+
+
+ /* OBJECT ANIMATION  */
+
+.square{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    border-radius: 30px;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    border-radius: 50%;
+}
+
+.circle:hover{
+    transform: rotate(360deg);
+    transition: all 0.5s;
+}
+
+.square:hover{
+    transform: rotate(50deg);
+    transition: all 0.5s;
+}
+
+
+/* position  */
+.box4{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 234, 0);
+    left: 45%;
+    position: relative;
+}
+.box5{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    left:30%;
+    position: static;
+}
+
+.b2{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    position: relative;
+}
+.cricle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 200);
+    top: 30px;
+    position: absolute;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    right:70px;
+    bottom: 0px;
+    position: fixed;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: chocolate;
+    position:sticky;
+    top:50px;
+}
+.overflow{
+    width: 400px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: auto;
+    overflow: auto;
+    /* scroll visibil hidden auto; */
+}
+/* body{
+ overflow-x: hidden;
+    overflow-y: hidden;
+} */
+
+
+

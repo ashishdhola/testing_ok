@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+
+<body>
+    <script>
+        console.log("Select an operation to perform the calculation in Calculator: \n");
+        console.log("1 Addition\n");
+        console.log("2 Subtraction\n");
+        console.log("3 Multiplication\n");
+        console.log("4 Division\n");
+        console.log("5 Modulus\n");
+        console.log("0 Exit\n");
+
+        function name() {
+            let choice;
+            do {
+                choice = parseInt(prompt("Enter your choice"));
+
+                if (choice >= 1 && choice <= 5) {
+
+                    let a = parseInt(prompt("Enter first number"));
+                    let b = parseInt(prompt("Enter second number"));
+                    console.log("a :", a);
+                    console.log("b :", b);
+
+                    switch (choice) {
+                        case 1:
+                            console.log("addition :", a + b);
+                            break;
+
+                        case 2:
+                            console.log("subtraction :", a - b);
+                            break;
+
+                        case 3:
+                            console.log("multiplication :", a * b);
+                            break;
+
+                        case 4:
+                            console.log("division :", a / b);
+                            break;
+
+                        case 5:
+                            console.log("modulus :", a % b);
+                            break;
+
+                        default:
+                            console.log("Invalid");
+                            break;
+                    }
+                }
+                else if (choice == 0) {
+                    console.log("Exit");
+                }
+                else {
+                    console.log("Enter Valid Choice");
+                }
+            } while (choice != 0);
+        }
+        name();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.header {
+    background-color: yellow;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.header div {
+    display: flex;
+    gap: 30px;
+}
+
+.header a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+

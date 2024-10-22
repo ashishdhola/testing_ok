@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(75, 75, 255);
+    
+}
+.img{
+    width: 100%;
+    height: 500px;
+    background-image: url('../images/pexels-designecologist-1779487.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    width: 100%;
+    height: 30px;   
+    background-color:black;   
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-top: 5px;
+}
+nav ul li:first-child a {
+ color: rgb(189, 185, 64);
+}
+
+nav ul li:nth-of-type(4) a{
+color: palevioletred;
+}
+
+nav ul li:nth-of-type(2) a{
+    color: rgb(133, 0, 44);
+    }
+
+nav ul li:last-child a{
+    color: rgb(140, 255, 33);
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding: 100px;
+}
+
+div p{
+    color: palevioletred;
+    font-size:40px;
+}
+p{
+    font-size: 30px;
+}
+.box > p{
+    color: violet;
+    font-size: 40px;
+}
+
+/* .box ~ p{
+    color: blue;
+} */
+
+/* .box + p{
+    color: chartreuse;
+} */
+
+.box + p + p{
+    color: brown;
+
+}
+
+div + p::first-letter{
+    color: black;
+    font-size: 60px;
+}
+
+ div + p:first-line{
+    color: rgb(208, 219, 52);
+    font-size: 40px;
+}
+

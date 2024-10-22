@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call-by-value-reference</title>
+</head>
+
+<body>
+    <script>
+        let obj1 = {
+            name: 'john'
+        }
+
+        let obj2 = {
+            name: 'john'
+        }
+
+        console.log(obj1 == obj2);  //false
+        console.log(obj1 === obj2); //false
+
+        //here we are comparing the objects which are stored at different memory locations. In JavaScript, when comparing objects it compares the references (memory locations) of the objects.
+
+        //Even though both objects have the same property name and value, obj1 and obj2 reside in different memory locations.
+
+        console.log(obj1.name === obj2.name); //true
+
+        /* =======================================*/
+        let obj3 = {
+            name: 'heloo'
+        }
+        let obj4 = obj3;
+
+        console.log(obj3 == obj4); //true
+        console.log(obj3 === obj4); //true
+
+        // obj4.name = "javascipt";
+        obj3 = { name: 'javascipt' }
+        console.log(obj3);
+        console.log(obj4);
+
+        console.log(obj3 == obj4); //true
+        console.log(obj3 === obj4); //true
+
+        /*==================================*/
+        let obj5 = {
+            name: 'dhvani'
+        }
+        let obj6 = obj5;
+
+        // obj5 = { name: 'john' }
+        obj6 = { name: 'john' }
+        // obj6.name = "john";
+
+        console.log(obj5);
+        console.log(obj6);
+
+        console.log(obj5 == obj6); 
+        console.log(obj5 === obj6); 
+
+    </script>
+</body>
+
+</html>

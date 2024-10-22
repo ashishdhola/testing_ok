@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oops-classes</title>
+</head>
+
+<body>
+    <script>
+        class Home {  //class
+            living(name) {  //methods/functions
+                console.log(`${name} is in the living room`);
+            }
+
+            kitchen(name) {  //methods/functions
+                console.log(`${name} is in the kitchen`);
+            }
+
+            bedroom(name) {  //methods/functions
+                console.log(`${name} is in the bedroom`);
+            }
+
+            terrace(name) {  //methods/functions
+                console.log(`${name} is at the terrace`);
+            }
+        }
+
+        let dhvani = new Home();  //dhvani is the object through which we can access the whole class "home"
+        console.log(dhvani);
+        dhvani.living();
+        dhvani.living("dhvani");
+        
+
+        let jinay = new Home();  // jinay is another object
+        console.log(jinay);
+        jinay.terrace("jinay");
+
+    </script>
+</body>
+
+</html>

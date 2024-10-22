@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+
+<body>
+    <input type="text" id="username" />
+    <p id="error"></p>
+    <button onclick="submit()">Submit</button>
+    <script>
+        function submit() {
+            let username = document.getElementById("username").value;
+
+            if (username == '') {
+                document.getElementById("error").innerHTML = "please enter your username";
+                document.getElementById("error").style.backgroundColor = "red";
+                document.getElementById("error").style.color = "white";
+            }
+            else {
+                // console.log(username);
+                document.getElementById("error").innerHTML = username;
+            }
+        }
+    </script>
+</body>
+
+</html>

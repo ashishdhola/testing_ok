@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table-data</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 25px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <th>Sr.No.</th>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Phone number</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="name"></td>
+            <td class="email"></td>
+            <td class="phone"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="name"></td>
+            <td class="email"></td>
+            <td class="phone"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="name"></td>
+            <td class="email"></td>
+            <td class="phone"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="name"></td>
+            <td class="email"></td>
+            <td class="phone"></td>
+        </tr>
+
+
+    </table>
+    <script>
+        class Data {
+            constructor(name, email, phone) {
+                this.name = name;
+                this.email = email;
+                this.phone = phone;
+            }
+
+            printData() {
+                // for (let index = 1; index < 4; index++) {
+                //     const element = document.querySelector(table tr : nth-child(i) );
+
+                // }
+                let name = document.querySelector(".name").innerHTML = this.name;
+                let email = document.querySelector(".email").innerHTML = this.email;
+                let phone = document.querySelectorAll(".phone").innerHTML = this.phone;
+            }
+        }
+
+        let jay = new Data("jay", "jay@gmail.com", 12345);
+        jay.printData(document.querySelectorAll("tr:nth-child(2)"));
+        // $("p:nth-child(3)")
+        // jay.printData(document.querySelector($("table tr:nth-child(2) .name")));
+
+        let ajay = new Data("ajay", "ajay@gmail.com", 12345);
+        // ajay.printData();
+        // let demo = document.getElementsByTagName("tr:nth-child(3)");
+        // ajay.printData(demo);
+        ajay.printData(document.querySelectorAll($("table tr:nth-child(3) td")));
+
+    </script>
+</body>
+
+</html>

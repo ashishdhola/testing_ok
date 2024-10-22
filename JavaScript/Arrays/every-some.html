@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>every-some</title>
+</head>
+
+<body>
+    <script>
+        /* ==========some===========*/
+        let arr = [10, 20, 30, 40, 50];
+
+        let ans1 = arr.some((val, index) => val == 50 && val > 30); //true 
+        // let res = arr.some((val, index) => {
+        //     val == 50 && val > 30;
+        // }); ......
+        console.log(ans1);
+
+        let ans2 = arr.some((val, index) => val == 50 || val > 30);  //true 
+        console.log(ans2);
+
+        console.log(arr.some((val, index) => val == 50 && val > 30)); //true 
+
+        console.log(arr.some((val, index) => val > 30)); //true 
+        
+
+        /* ==========every===========*/
+        // let arr = [10, 20, 30, 40, 50];
+
+        console.log(arr.every((val, index) => val > 30)); //false 
+
+        let ans3 = arr.every((val, index) => val == 10 && val > 0); //false
+        console.log(ans3);
+
+        let ans4 = arr.every((val, index) => val == 50 || val > 30);  //false
+        console.log(ans4);
+
+        let ans5 = arr.every((val, index) => val == 0 || val > 0);  //true
+        console.log(ans5);
+
+        console.log("6", arr.every((val, index) => val == 0 && val > 0));  //false
+
+        let ans6 = arr.every((val, index) => index == 0 && index > 0);  //true
+        console.log(ans6);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+body{
+    background-color: rgb(255, 0, 128);
+}
+
+nav{
+    background-color:blanchedalmond;
+    margin-top: 10px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    /* color: rgb(0, 0, 0); */
+    padding:10px;
+    z-index: 1;
+    position: relative;
+}
+
+ /* nav ul li:hover a{
+   color: rgb(204, 255, 0);   
+ }  */
+
+nav ul li:nth-child(1) a{
+border-left: 10px solid darkblue;
+}
+
+nav ul li:nth-child(2) a{
+   border-left: 10px solid darkgreen ; 
+}
+
+nav ul li:nth-child(3) a{
+    border-left: 10px solid deeppink ;
+}
+
+nav ul li:nth-child(4) a{
+    border-left: 10px solid orangered ;
+}
+
+nav ul li:nth-child(5) a{
+    border-left: 10px solid purple ;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    transition: all 0.5s ease-in;
+}
+
+nav ul :hover a::after{
+    width: 100%;
+}
+
+nav ul li:nth-child(1) a::after{
+    background-color:darkblue ;
+    }
+    
+    nav ul li:nth-child(2) a::after{
+       background-color:  darkgreen ; 
+    }
+    
+    nav ul li:nth-child(3) a::after{
+        background-color:  deeppink ;
+    }
+    
+    nav ul li:nth-child(4) a::after{
+        background-color:orangered ;
+    }
+    
+    nav ul li:nth-child(5) a::after{
+        background-color:  purple;
+    }
+    

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Even-Odd</title>
+</head>
+<body>
+  
+  <h1>2. Write a JavaScript program to check numbers even and odd.</h1>
+
+  <h2>Enter a number:</h2>
+  <input type="number" id="num">
+
+  <button onclick="getNumber()">Get Number</button>
+
+  <script>
+    function getNumber() {
+      let num = document.getElementById("num").value;
+      
+    if (num%2 == 0) {
+        alert("The number is even.");
+    }
+    else {
+        alert("The number is odd.");
+    }
+    }
+  </script>
+</body>
+</html>

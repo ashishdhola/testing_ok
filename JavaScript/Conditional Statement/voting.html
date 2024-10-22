@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voting Eligibility</title>
+</head>
+<body>
+  
+<h1>5. Write a JavaScript program to decide that you eligible for voting.</h1>
+
+  <h2>Enter your age :</h2>
+  <input type="number" id="age">
+
+  <button onclick="getNumber()">Submit</button>
+
+  <script>
+    function getNumber() {
+      let age = document.getElementById("age").value;
+      
+    if (age >=18) {
+        alert("You are eligible for voting.");
+    }
+    else {
+        alert("You are not eligible for voting.");
+    }
+    }
+  </script>
+</body>
+</html>

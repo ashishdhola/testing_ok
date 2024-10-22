@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polymorphism</title>
+</head>
+
+<body>
+    <h1> Polymorphism</h1>
+    <h2>Think of polymorphism as something having multiple forms. In this instance, polymorphism means the same
+        method can be used on different objects. For example , if a Car and a Motocycle have the same function —
+        drive,polymorphism gives us an ability to call the same method on different objects.Same function is called on
+        different classes.</h2>
+    <script>
+        class Car {
+            drive() {
+                console.log('Car')
+            }
+        }
+
+        class Motocycle extends Car {
+            drive() {
+                console.log('Motocycle')
+            }
+        }
+        const car = new Car()
+        const moto = new Motocycle()
+        car.drive()
+        moto.drive() 
+    </script>
+</body>
+
+</html>

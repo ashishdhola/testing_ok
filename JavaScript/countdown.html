@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+</head>
+<style>
+    .countDown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #increment,
+    #decrement,
+    #countValue {
+        padding: 10px 50px;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 100px;
+        background-color: crimson;
+        cursor: pointer;
+    }
+
+    #reset {
+        margin: 40px;
+        padding: 10px;
+        border-radius: 30px;
+        background-color: green;
+        color: aliceblue;
+    }
+</style>
+
+<body>
+    <div class="countDown">
+        <button id="increment">+</button>
+        <div id="countValue" style="background-color: transparent;">0</div>
+        <button id="decrement">-</button>
+        <button id="reset">RESET</button>
+    </div>
+
+    <script>
+        let counter = 0;
+
+        //increment
+        document.getElementById("increment").addEventListener('click', () => {
+            counter++;
+            countValue.innerHTML = counter;
+        });
+
+        //decrement
+        document.getElementById("decrement").addEventListener('click', () => {
+            counter--;
+            countValue.innerHTML = counter;
+        });
+
+        //reset
+        document.getElementById("reset").addEventListener('click', () => {
+            counter = 0;
+            countValue.innerHTML = counter;
+        });
+    </script>
+</body>
+
+</html>

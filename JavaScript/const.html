@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //invalid
+    // const x = 24;
+    //       x = 34;
+    // console.log("X =",x);
+
+    const y = 24;
+           z = 34;
+    console.log("Y =",y);
+    console.log("Z =",z);
+    
+    // const f = 20;
+    //  f = f + 10;
+    // console.log("F =",f); //Error
+
+    // const a;
+    // const b=10;
+    // console.log(b);  //Error
+    
+    // console.log(j);  //Error-Cannot access 'j' before initialization
+    // let j = 24; 
+
+    
+    const h = 45;  // it is a global scope
+    {
+        const i = 56;
+        console.log("H =",h);
+    }
+
+    // {
+    //     const j = 45;  //this is a block scope
+    // }
+    // {
+    //     const k = 56;
+    //     console.log("J =",j);  //Error: j is not defined
+    // }
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let store = (() => {  //store is a variable which stores the function and returns it
+            return new Promise((resolve, reject) => {
+                // console.log("HELLO");
+                // resolve("resolve");
+                reject("reject");
+            });
+        });
+
+        let ans = store();
+        ans.then((res) => {
+            console.log("Promise is fulfilled", res);
+        });
+
+        ans.catch((err) => {
+            // console.log("Promise is rejected", err);
+            console.log(err);
+        })
+    </script>
+</body>
+
+</html>

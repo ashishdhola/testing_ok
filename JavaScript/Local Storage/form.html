@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <label for="username">Username</label>
+    <input type="text" id="username" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="number" id="phone" required>
+
+    <p id="user"></p>
+    <p id="mail"></p>
+    <p id="number"></p>
+
+    <button onclick="submit()">Submit</button>
+    <script>
+        function submit() {
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+
+            localStorage.setItem("Username", username);
+            localStorage.setItem("email", email);
+            localStorage.setItem("phone", phone);
+
+            let output = document.getElementById("user").innerHTML = username;
+            let output1 = document.getElementById("mail").innerHTML = email;
+            let output2 = document.getElementById("number").innerHTML = phone;
+        }
+    </script>
+</body>
+
+</html>

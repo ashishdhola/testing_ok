@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor</title>
+</head>
+
+<body>
+    <h2>The constructor() method is a special method for creating and initializing objects created within a class.<h2>
+            <h2>The constructor() method is called automatically when a class is initiated, and it has to have the exact
+                name "constructor", in fact, if you do not have a constructor method, JavaScript will add an invisible
+                and empty constructor method.</h2>
+            <h2>Note: A class cannot have more than one constructor() method. This will throw a SyntaxError.</h2>
+            <script>
+                class Home {  //class
+                    constructor(name) {
+                        this.name = name;
+                    }
+                    living() {  //methods/functions
+                        console.log(`${this.name} is in the living room`);
+                    }
+
+                    kitchen() {  //methods/functions
+                        console.log(`${this.name} is in the kitchen`);
+                    }
+
+                    bedroom() {  //methods/functions
+                        console.log(`${this.name} is in the bedroom`);
+                    }
+
+                    terrace() {  //methods/functions
+                        console.log(`${this.name} is at the terrace`);
+                    }
+                }
+
+                let dhvani = new Home("dhvani");
+                dhvani.kitchen();
+
+            </script>
+</body>
+
+</html>

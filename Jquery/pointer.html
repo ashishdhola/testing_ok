@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        background-color: deeppink;
+        /* overflow: hidden; */
+        cursor: none;
+    }
+
+    .out{
+        width: 20px;
+        height: 20px;
+        border: 3px solid black;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    .in{
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+</style>
+<body>
+    <div class="out">
+        <div class="in"></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).on('mousemove', function(e){
+            var xabc = e.pageX;
+            var yabc = e.pageY;
+            $('.out').css({
+                'top': yabc,
+                'left': xabc
+            });
+        });
+    </script>
+</body>
+</html>

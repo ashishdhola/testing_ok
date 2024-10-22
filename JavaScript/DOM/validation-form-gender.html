@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+
+<body>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+
+    <input type="radio" name="gender" id="other" value="other">
+    <label for="other">Other</label>
+
+    <p id="error"></p>
+    <h3 id="output"></h3>
+    
+    <button onclick="submit()">Submit</button>
+
+    <script>
+        function submit() {
+
+            if (document.getElementById('male').checked) {
+                let selectedValue = document.getElementById('male').value;
+                document.getElementById("output").innerHTML = selectedValue;
+            }
+            else if (document.getElementById('female').checked) {
+                let selectedValue = document.getElementById('female').value;
+                document.getElementById("output").innerHTML = selectedValue;
+            }
+            else if (document.getElementById('other').checked) {
+                let selectedValue = document.getElementById('other').value;
+                document.getElementById("output").innerHTML = selectedValue;
+            }
+            else {
+                document.getElementById("error").innerHTML = "please select one";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operator</title>
+</head>
+<body>
+    <h1>
+        <ol>
+            <h2>Comparison Operators</h2>
+            <li>==</li>
+            <li>===</li>
+            <li>!=</li>
+            <li>!==</li>
+            <li>></li>
+            <li><</li>
+            <li>>=</li>
+            <li><=</li>
+        </ol>
+    </h1>
+</body>
+
+<script>
+     let a = 5;
+     let b = 7;
+     console.log(a==b); //false
+
+     let c = 5;
+     let d = '5';
+     console.log(c==d); //true because it only checks the value i.e. the number
+     console.log(c===d); //false because the third = check the data type also
+
+     console.log("5!='5' :",5 !='5');
+     console.log("5!=='5' :",5 !=='5'); // true bcoz both dataypes are different one is no. & other is string 
+                                        // so they are not equal which is true
+
+    console.log("-2 > -5 :",-2>-5);
+
+</script>
+</html>

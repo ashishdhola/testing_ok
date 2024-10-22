@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch-calc</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("Enter first number"));
+        let b = parseInt(prompt("Enter second number"));
+        console.log("a :", a);
+        console.log("b :", b);
+
+        let n = prompt("Enter operator");
+
+        switch (n) {
+            case "+":
+                console.log("addition :", a + b);
+                break;
+
+            case "-":
+                console.log("subtraction :", a - b);
+                break;
+
+            case "*":
+                console.log("multiplication :", a * b);
+                break;
+
+            case "/":
+                console.log("division :", a / b);
+                break;
+
+            case "%":
+                console.log("modulus :", a % b);
+                break;
+
+            default:
+                console.log("Invalid");
+                break;
+        }
+    </script>
+</body>
+
+</html>

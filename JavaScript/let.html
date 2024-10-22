@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let</title>
+</head>
+<body></body>
+
+<script>
+
+    //invalid
+    //   let d = 10;
+    //   let d = 20;
+    //   console.log(d); // error
+
+    let a = 10;
+        a = 20;
+    console.log("A =",a);  // 20
+
+    let b = 35;
+        c = 47;
+    console.log("B =",b); // 35
+    console.log("C =",c); // 47
+
+    let e = 20;
+    e = e + 10;
+    console.log("E =",e); // 30
+
+    /*---------------------------*/
+    let f = 45;
+    {
+        let g = 56;
+        console.log("F =",f);
+
+    }
+
+    /*---------------Error------------
+    {
+        let h = 45;
+    }
+    {
+        let i = 56;
+        console.log("H =",h);
+    }
+    ---------------------------------*/
+
+    // console.log(j);
+    // let j = 24;  //Error
+
+    let k = null;
+    console.log("K :",k);
+
+    let l = "0";
+    console.log("L :",l);
+
+    let m;
+    console.log("M :",m);  // undefined
+
+</script>
+
+</html>

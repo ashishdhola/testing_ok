@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultant</title>
+    <!-- =========Fonts========== -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- =========Font Awesome========== -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- =========CSS========== -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- =========Flowbite CSS========== -->
+    <link rel="stylesheet" href="css/flowbite.min.css">
+    <!-- =========Tailwind CSS========== -->
+    <script src="css/tailwind.css"></script>
+    <!-- =========Flowbite Js========== -->
+    <script src="js/flowbite.min.js"></script>
+    <!-- ============Swiper CSS========= -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="bg-[#d5dede] pt-5">
+        <div class="container mx-auto pl-[15px] pr-[15px]">
+            <nav class="border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+                <div
+                    class="max-w-screen-xl flex flex-wrap justify-between items-center mx-auto p-4 border-b-[1px] border-solid border-[#b1bcbd]">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="images/header-logo.svg" class="h-8" alt="Flowbite Logo" />
+                    </a>
+
+                    <button data-collapse-toggle="navbar-dropdown" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-dropdown" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+
+                    <div class="w-full md:w-auto flex flex-wrap items-center gap-x-[60px]" id="navbar-dropdown">
+                        <ul
+                            class="flex flex-col font-normal p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+                            <!-- ========== 1-> Demos=========== -->
+                            <li>
+                                <a href="#" id="dropdownHoverDemo" data-dropdown-toggle="dropdownHover-1"
+                                    data-dropdown-trigger="hover"
+                                    class="block py-5 px-6 px-3 text-[#20282d] opacity-[1px] text-base rounded md:bg-transparent md:text-[#20282d] md:p-0 md:dark:text-[#20282d] dark:bg-blue-600 md:dark:bg-transparent hover:opacity-[0.7]"
+                                    aria-current="page">Demos</a>
+
+                                <!-- Dropdown menu Demo -->
+                                <div id="dropdownHover-1"
+                                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                    <ul class="py-2 text-sm px-[20px] py-[12px]" aria-labelledby="dropdownHoverDemo">
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 text-[#33e0b7] transition-all duration-[0.3s] hover:m-0 hover:text-[#33e0b7]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                Home 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                Home 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                Home 3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- ========== 2-About Us=========== -->
+                            <li>
+                                <a href="#" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                                    data-dropdown-trigger="hover"
+                                    class="block py-5 px-6 px-3 text-[#20282d] opacity-[1px] text-base rounded md:bg-transparent md:text-[#20282d] md:p-0 md:dark:text-[#20282d] dark:bg-blue-600 md:dark:bg-transparent hover:opacity-[0.7]"
+                                    aria-current="page">About Us</a>
+
+                                <!-- Dropdown menu About Us  -->
+                                <div id="dropdownHover"
+                                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                    <ul class="py-2 text-sm px-[20px] py-[12px]" aria-labelledby="dropdownHoverButton">
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                about us
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                our team
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                our clients
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                pricing
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                career
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                details
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                testimonials
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                FAQ
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- ========== 3-Services=========== -->
+                            <li>
+                                <a href="#" id="dropdownHoverServices" data-dropdown-toggle="dropdownHover-3"
+                                    data-dropdown-trigger="hover"
+                                    class="block py-5 px-6 px-3 text-[#20282d] opacity-[1px] text-base rounded md:bg-transparent md:text-[#20282d] md:p-0 md:dark:text-[#20282d] dark:bg-blue-600 md:dark:bg-transparent hover:opacity-[0.7]"
+                                    aria-current="page">Services</a>
+
+                                <!-- Dropdown menu Services-->
+                                <div id="dropdownHover-3"
+                                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                    <ul class="py-2 text-sm w-[200px] px-[20px] py-[12px]"
+                                        aria-labelledby="dropdownHoverServices">
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                services 1
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                services 2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                services 3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                service details
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- ==========4-Portfolio=========== -->
+                            <li>
+                                <a href="#" id="dropdownHoverPortfolio" data-dropdown-toggle="dropdownHover-4"
+                                    data-dropdown-trigger="hover"
+                                    class="block py-5 px-6 px-3 text-[#20282d] opacity-[1px] text-base rounded md:bg-transparent md:text-[#20282d] md:p-0 md:dark:text-[#20282d] dark:bg-blue-600 md:dark:bg-transparent hover:opacity-[0.7]"
+                                    aria-current="page">Portfolio</a>
+
+                                <!-- Dropdown menu Portfolio-->
+                                <div id="dropdownHover-4"
+                                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                    <ul class="py-2 text-sm w-[200px] px-[20px] py-[12px]"
+                                        aria-labelledby="dropdownHoverPortfolio">
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                portfolio
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                <span class="dropdown-line mr-[10px]"></span>
+                                                portfolio details
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- ==========5-Blog=========== -->
+                            <li>
+                                <a href="#"
+                                    class="block py-5 px-6 px-3 text-[#20282d] opacity-[1px] text-base rounded md:bg-transparent md:text-[#20282d] md:p-0 md:dark:text-[#20282d] dark:bg-blue-600 md:dark:bg-transparent hover:opacity-[0.7]"
+                                    aria-current="page">Blog</a>
+                            </li>
+
+                            <!-- ==========6-All Pages=========== -->
+                            <li>
+                                <a href="#" id="dropdownHoverPages" data-dropdown-toggle="dropdownHover-6"
+                                    data-dropdown-trigger="hover"
+                                    class="block py-5 px-6 px-3 text-[#20282d] opacity-[1px] text-base rounded md:bg-transparent md:text-[#20282d] md:p-0 md:dark:text-[#20282d] dark:bg-blue-600 md:dark:bg-transparent hover:opacity-[0.7]"
+                                    aria-current="page">All Pages</a>
+
+                                <!-- Dropdown menu All Pages-->
+                                <div id="dropdownHover-6"
+                                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-[680px] dark:bg-gray-700">
+
+                                    <ul class="py-2 text-sm columns-4 py-3.5 px-5" aria-labelledby="dropdownHoverPages">
+
+                                        <!--===========column-1===============-->
+                                        <div>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 text-[#33e0b7] transition-all duration-[0.3s] hover:m-0 hover:text-[#33e0b7]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    Home 1
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    Home 2
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    Home 3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    About 1
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    About 2
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    About 3
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <!--===========column-2===============-->
+                                        <div>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    our team
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    our clients
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    pricing
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    career
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    details
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    testimonials
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <!--===========column-3===============-->
+                                        <div>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    FAQ
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    services 1
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    services 2
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    services 3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    service details
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    portfolio
+                                                </a>
+                                            </li>
+                                        </div>
+
+                                        <!--===========column-4===============-->
+                                        <div>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    portfolio details
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    blog 1
+                                                </a>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    blog 2
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    blog 3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    blog details
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="dropdown-text inline-block relative px-4 py-2 -ml-5 py-2 pr-2 transition-all duration-[0.3s] hover:m-0 hover:text-[#20282db2]">
+                                                    <span class="dropdown-line mr-[10px]"></span>
+                                                    contact us
+                                                </a>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div>
+                            <button type="button"
+                                class="text-[#20282d] bg-[#2130351a] transition-all duration-[0.3s] py-5 px-10 text-lg hover:bg-[#20282d] hover:text-[#fff] focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full me-2 mb-2 dark:bg-gray-800 dark:hover:bg-#20282d dark:focus:ring-gray-700 dark:border-gray-700">Get
+                                a Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-[#d5dede] pt-[30px] pb-[130px] dark:bg-gray-900">
+        <div class="gap-16 items-start py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div>
+                <h1 class="text-[60px] font-semibold mb-6 leading-[72px] w-full md:text-[60px] xl:text-[60px] dark:text-white"
+                    style="font-family:'Sora';">
+                    Cultivate your brand and expand your business
+                </h1>
+                <p
+                    class="max-w-2xl mb-[50px] text-[#20282d] leading-6 lg:mb-[50px] md:text-lg lg:text-xl dark:text-gray-400">
+                    Our
+                    expertise lies in fostering business expansion through strategic marketing consultancy.
+
+                </p>
+                <button type="button"
+                    class="text-[#20282d] bg-[#2130351a] transition-all duration-[0.3s] py-5 px-10 text-lg hover:bg-[#20282d] hover:text-[#fff] focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full me-2 mb-2 dark:bg-gray-800 dark:hover:bg-#20282d dark:focus:ring-gray-700 dark:border-gray-700">Let's
+                    Get in Touch</button>
+                <a href="#"
+                    class="inline-flex items-center justify-center px-5 py-3 text-[18px] text-[#213035] leading-6 font-medium text-center transition-all duration-[0.3s]  hover:[#213035] hover:opacity-50 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    About Us <i class="fa-solid fa-arrow-right ml-2.5"></i>
+                </a>
+            </div>
+            <div class="mt-8 relative flex items-end">
+                <div
+                    class="chart-holder w-[445px] h-[335px] absolute backdrop-blur-[74px] border-[11px] border-solid border-[#ffffff80] rounded-[21px] z-[1] -top-[80px] left-[81px] mx-auto">
+                    <img src="images/banner chart.webp" class="rounded-[10px] object-cover w-full h-full">
+                </div>
+                <div
+                    class="circle-block w-[530px] h-[530px] bg-[#213035] backdrop-blur-[36px] border-[11px] border-solid border-[#ffffffe6] rounded-[365px] absolute top-[35px] left-[40px] ">
+                </div>
+                <img src="images/section-1-member.webp" class="absolute h-[615px] z-[2] left-[65px] -top-[60px]">
+
+                <div
+                    class="absolute p-[5.5px] bg[#ffffff7f] backdrop-blur-[58px] rounded-2xl z-[10] top-[406px] left-[29px]">
+                    <div class="bg-[#33e0b7] rounded-xl px-[22px] py-[11px]">
+                        <div class="text-white text-3xl font-semibold" style="font-family: 'Sora';">98%</div>
+                        <p class="text-white text-[18px]">Return on investment</p>
+                    </div>
+                </div>
+
+                <div
+                    class="absolute p-[5.5px] bg[#ffffff7f] backdrop-blur-[58px] rounded-2xl z-[10] -bottom-[441px] -right-[12px]">
+                    <div class="bg-[#33e0b7] rounded-xl px-[22px] py-[11px]">
+                        <div class="text-white text-3xl font-semibold" style="font-family: 'Sora';">12+%</div>
+                        <p class="text-white text-[18px]">
+                            Years experience
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="company-logo-holder mt-[5px] ">
+                <div class="gap-x-[100px] w-full flex items-center">
+                    <img src="images/boltshift company (1).svg">
+                    <img src="images/lightbox company.svg">
+                    <img src="images/64d5d02f0eed8959c42eedd6_feargerdev company.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================PARTNER====================  -->
+    <section class="pt-[130px] pb-[130px]">
+        <div class="container mx-auto pl-[15px] pr-[15px]">
+            <div class="text-[84px] font-semibold leading-[100.8px] mb-[50px]" style="font-family:'Sora';">Partner with
+                us to unleash business potential</div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <div class="container mx-auto pl-[15px] pr-[15px]">
+            <div class="flex justify-between">
+                <div class="w-9/12">
+                    <p class="mt-[50px] mb-[50px] w-[62%] text-[#20282d] leading-[30px]">At Consultant, we recognize the
+                        individuality of each business, rejecting generic fixes. Hence, we adopt a custom method to
+                        offer strategies that match your objectives, difficulties, and sectoral fluctuations.</p>
+
+                    <div class="check-list gap-x-[80px] gap-y-[10px] flex flex-wrap items-center">
+                        <div class="w-[24%] flex items-center gap-x-[10px] font-medium">
+                            <img src="images/check icon.svg" alt="">
+                            <p>Strategic Expertise</p>
+                        </div>
+
+                        <div class="w-[24%] flex items-center gap-x-[10px] font-medium">
+                            <img src="images/check icon.svg" alt="">
+                            <p>Customized Solutions</p>
+                        </div>
+
+                        <div class="w-[24%] flex items-center gap-x-[10px] font-medium">
+                            <img src="images/check icon.svg" alt="">
+                            <p>Full-Service Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="black-box">
+                        <img src="images/arrow right icon.svg" class="relative">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================OUR SERVICES==================== -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="pb-[130px] px-4 mx-auto max-w-screen-xl sm:pb-[130px] lg:px-6">
+            <div class="w-full">
+                <p class="mb-5 font-medium">Our services</p>
+                <div class="flex justify-between items-end">
+                    <h2 class="text-[50px] w-[35%] font-semibold leading-[60px]" style=" font-family: 'Sora';">Ways to
+                        support your business
+                    </h2>
+                    <button type="button"
+                        class="text-[#20282d] bg-[#2130351a] transition-all duration-[0.3s] py-5 px-10 text-lg hover:bg-[#20282d] hover:text-[#fff] focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full me-2 mb-2 dark:bg-gray-800 dark:hover:bg-#20282d dark:focus:ring-gray-700 dark:border-gray-700">View
+                        All Services</button>
+                </div>
+            </div>
+            <div class="space-y-8  mt-[50px] md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <!-- ===============1============== -->
+                <div
+                    class="black-service-box bg-[#213035] p-5 text-white cursor-pointer transition-transform duration-[0.3s]">
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 dark:bg-primary-900">
+                        01
+                    </div>
+                    <div class="section-divider services-line-divider"></div>
+                    <h3 class="mb-2.5 text-[24px] font-semibold leading-[28.8px] dark:text-white"
+                        style="font-family: 'Sora';">Strategic Marketing
+                        Consulting</h3>
+                    <p class="font-normal text-base w-[83%] dark:text-gray-400">Our marketing consulting services offer
+                        expert guidance and insights.</p>
+                </div>
+
+                <!-- ===============2============== -->
+                <div class="white-service-box box p-5 cursor-pointer transition-transform duration-[0.3s]">
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 dark:bg-primary-900">
+                        02
+                    </div>
+                    <div class="section-divider services-line-divider"></div>
+                    <h3 class="mb-2.5 text-[24px] font-semibold leading-[28.8px] dark:text-white"
+                        style="font-family: 'Sora';">Brand Development and Positioning </h3>
+                    <p class="font-normal text-base w-[83%] dark:text-gray-400">Successful marketing relies on a solid
+                        brand base.</p>
+                </div>
+
+                <!-- ===============3============== -->
+                <div class="white-service-box box p-5 cursor-pointer transition-transform duration-[0.3s]">
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 dark:bg-primary-900">
+                        03
+                    </div>
+                    <div class="section-divider services-line-divider"></div>
+                    <h3 class="mb-2.5 text-[24px] font-semibold leading-[28.8px] dark:text-white"
+                        style="font-family: 'Sora';">Digital Marketing Strategies</h3>
+                    <p class="font-normal text-base w-[83%] dark:text-gray-400">
+                        In the current digital era, a strong online presence is vital for business achievement.</p>
+                </div>
+
+                <!-- ===============4============== -->
+                <div class="white-service-box box p-5 cursor-pointer transition-transform duration-[0.3s]">
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 dark:bg-primary-900">
+                        04
+                    </div>
+                    <div class="section-divider services-line-divider"></div>
+                    <h3 class="mb-2.5 text-[24px] font-semibold leading-[28.8px] dark:text-white"
+                        style="font-family: 'Sora';">Market Research and Analysis</h3>
+                    <p class="font-normal text-base w-[83%] dark:text-gray-400">
+                        It's vital: comprehend your target market,
+                        anticipate industry trends.</p>
+                </div>
+
+                <!-- ===============5============== -->
+                <div class="white-service-box box p-5 cursor-pointer transition-transform duration-[0.3s]">
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 dark:bg-primary-900">
+                        05
+                    </div>
+                    <div class="section-divider services-line-divider"></div>
+                    <h3 class="mb-2.5 text-[24px] font-semibold leading-[28.8px] dark:text-white"
+                        style="font-family: 'Sora';">Content Creation and Marketing</h3>
+                    <p class="font-normal text-base w-[83%] dark:text-gray-400">
+                        Compelling, top-notch content effectively
+                        draws and retains customers.</p>
+                </div>
+
+                <!-- ===============6============== -->
+                <div class="white-service-box box p-5 cursor-pointer transition-transform duration-[0.3s]">
+                    <div
+                        class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 dark:bg-primary-900">
+                        06
+                    </div>
+                    <div class="section-divider services-line-divider"></div>
+                    <h3 class="mb-2.5 text-[24px] font-semibold leading-[28.8px] dark:text-white"
+                        style="font-family: 'Sora';">Customer Engagement and Relationship </h3>
+                    <p class="font-normal text-base w-[83%] dark:text-gray-400">
+                        Long-term success necessitates cultivating
+                        robust customer relationships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================PORTFOLIO==================== -->
+    <section class="pb-[130px]">
+        <div class="container mx-auto pl-[15px] pr-[15px]">
+            <div class="text-center ">
+                <p class="mb-5 font-medium">Portfolio</p>
+                <h2 class="text-[50px] font-semibold leading-[60px] mb-6" style=" font-family: 'Sora';">Our
+                    recent
+                    projects</h2>
+                <p class="mb-[50px] text-[#20282d] leading-[30px]">Our varied portfolio of successful
+                    ventures across diverse <br> industries is a source of pride for us.</p>
+            </div>
+
+            <div class="w-full flex gap-x-[30px]">
+
+                <!-- ============col-6============= -->
+                <div class="w-1/2 flex flex-col gap-y-[30px]">
+
+                    <!-- ==========first image======== -->
+                    <div class="img-cover w-full h-[600px] relative overflow-hidden">
+
+                        <a href="#" class="w-full h-full object-cover">
+                            <img src="images/empowering businesses-p-800.webp" class="w-full h-full object-cover">
+                        </a>
+
+                        <div class="portfolio-black-cover-active">
+                            <div class="img-text-wrap flex justify-center items-center flex-col">
+                                <a href="#"
+                                    class="mb-2.5 text-white text-3xl font-semibold transition-colors duration-[0.3s] hover:text-[#ffffffb3]"
+                                    style="font-family: 'Sora';">
+                                    NexGen
+                                </a>
+
+                                <!-- This div contains small text on image-->
+                                <div class="flex items-center gap-x-[5px]">
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+                                        Strategy
+
+                                    </a>
+                                    <div class="text-white transition-colors duration-[0.3s] hover:text-[#ffffffb3]"> /
+                                    </div>
+
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+
+                                        Planning</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==========second image======== -->
+                    <div class="img-cover w-full h-[600px] relative overflow-hidden">
+
+                        <a href="#" class="w-full h-full object-cover">
+                            <img src="images/prospera.jpg" class="w-full h-full object-cover">
+                        </a>
+
+                        <div class="portfolio-black-cover">
+                            <div class="img-text-wrap flex justify-center items-center flex-col">
+                                <a href="#"
+                                    class="mb-2.5 text-white text-3xl font-semibold transition-colors duration-[0.3s] hover:text-[#ffffffb3]"
+                                    style="font-family: 'Sora';">
+                                    Prospera
+                                </a>
+
+                                <!-- This div contains small text on image-->
+                                <div class="flex items-center gap-x-[5px]">
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+                                        Success
+
+                                    </a>
+                                    <div class="text-white transition-colors duration-[0.3s] hover:text-[#ffffffb3]"> /
+                                    </div>
+
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+                                        Planning</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==========third image======== -->
+                    <div class="img-cover w-full h-[400px] relative overflow-hidden">
+
+                        <a href="#" class="w-full h-full object-cover">
+                            <img src="images/pacific.jpg" class="w-full h-full object-cover">
+                        </a>
+
+                        <div class="portfolio-black-cover">
+                            <div class="img-text-wrap flex justify-center items-center flex-col">
+                                <a href="#"
+                                    class="mb-2.5 text-white text-3xl font-semibold transition-colors duration-[0.3s] hover:text-[#ffffffb3]"
+                                    style="font-family: 'Sora';">
+                                    Pacific
+                                </a>
+
+                                <!-- This div contains small text on image-->
+                                <div class="flex items-center gap-x-[5px]">
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+                                        Strategy
+
+                                    </a>
+                                    <div class="text-white transition-colors duration-[0.3s] hover:text-[#ffffffb3]"> /
+                                    </div>
+
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+
+                                        Planning</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============col-6============= -->
+                <div class="w-1/2 flex flex-col gap-y-[30px]">
+
+                    <!-- ==========first image======== -->
+                    <div class="img-cover w-full h-[400px] relative overflow-hidden">
+
+                        <a href="#" class="w-full h-full object-cover">
+                            <img src="images/peak-power.jpg" class="w-full h-full object-cover">
+                        </a>
+
+                        <div class="portfolio-black-cover">
+                            <div class="img-text-wrap flex justify-center items-center flex-col">
+                                <a href="#"
+                                    class="mb-2.5 text-white text-3xl font-semibold transition-colors duration-[0.3s] hover:text-[#ffffffb3]"
+                                    style="font-family: 'Sora';">
+                                    Peak Power
+                                </a>
+
+                                <!-- This div contains small text on image-->
+                                <div class="flex items-center gap-x-[5px]">
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+                                        Success
+
+                                    </a>
+                                    <div class="text-white transition-colors duration-[0.3s] hover:text-[#ffffffb3]"> /
+                                    </div>
+
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+
+                                        Strategy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==========second image======== -->
+                    <div class="img-cover w-full h-[600px] relative overflow-hidden">
+
+                        <a href="#" class="w-full h-full object-cover">
+                            <img src="images/prime-path.jpg" class="w-full h-full object-cover">
+                        </a>
+
+                        <div class="portfolio-black-cover">
+                            <div class="img-text-wrap flex justify-center items-center flex-col">
+                                <a href="#"
+                                    class="mb-2.5 text-white text-3xl font-semibold transition-colors duration-[0.3s] hover:text-[#ffffffb3]"
+                                    style="font-family: 'Sora';">
+                                    PrimePath
+                                </a>
+
+                                <!-- This div contains small text on image-->
+                                <div class="flex items-center gap-x-[5px]">
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+                                        Planning
+                                    </a>
+                                    <div class="text-white transition-colors duration-[0.3s] hover:text-[#ffffffb3]"> /
+                                    </div>
+
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+                                        Success</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ==========third image======== -->
+                    <div class="img-cover w-full h-[600px] relative overflow-hidden">
+
+                        <a href="#" class="w-full h-full object-cover">
+                            <img src="images/paragon.jpg" class="w-full h-full object-cover">
+                        </a>
+
+                        <div class="portfolio-black-cover">
+                            <div class="img-text-wrap flex justify-center items-center flex-col">
+                                <a href="#"
+                                    class="mb-2.5 text-white text-3xl font-semibold transition-colors duration-[0.3s] hover:text-[#ffffffb3]"
+                                    style="font-family: 'Sora';">
+                                    Paragon
+                                </a>
+
+                                <!-- This div contains small text on image-->
+                                <div class="flex items-center gap-x-[5px]">
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+                                        Planning
+                                    </a>
+                                    <div class="text-white transition-colors duration-[0.3s] hover:text-[#ffffffb3]"> /
+                                    </div>
+
+                                    <a href="#"
+                                        class="text-white text-[16px] font-normal  transition-colors duration-[0.3s] hover:text-[#ffffffb3]">
+                                        Strategy
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================ABOUT US==================== -->
+    <section class="pt-[130px] pb-[130px] bg-[#213035] dark:bg-[#213035]">
+        <div
+            class="gap-24 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-24 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+            <img src="images/about-us.webp" class="h-full">
+            <div class="md:mt-0 text-white">
+                <p class="mb-5 font-medium">About us</p>
+                <h2 class="text-[50px] font-semibold leading-[60px] mb-6" style=" font-family: 'Sora';">Drive to enhance
+                    company revenue</h2>
+                <p class="leading-[30px] font-bold w-[82%]">Recognizing the distinctiveness of each business, we avoid
+                    generic
+                    solutions.</p>
+                <p class="leading-[30px] mt-5 w-[72%]">This drives our commitment to crafting custom strategies that
+                    match your objectives, difficulties, and industry trends, harnessing a potent synergy between our
+                    expertise and your vision for success. </p>
+
+                <div class="check-list mt-[50px] grid gap-[30px]">
+                    <div class="flex items-center gap-x-[10px] font-medium">
+                        <img src="images/check icon.svg" class="invert-[400%]">
+                        <p>Quality Products or Services</p>
+                    </div>
+
+                    <div class="flex items-center gap-x-[10px] font-medium">
+                        <img src="images/check icon.svg" class="invert-[400%]">
+                        <p>Competitive Pricing</p>
+                    </div>
+
+                    <div class="flex items-center gap-x-[10px] font-medium">
+                        <img src="images/check icon.svg" class="invert-[400%]">
+                        <p>Excellent Customer Service</p>
+                    </div>
+
+                    <div class="flex items-center gap-x-[10px] font-medium">
+                        <img src="images/check icon.svg" class="invert-[400%]">
+                        <p>Innovation and Creativity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--==============COUNTER JS==============-->
+        <div class="px-4 mx-auto max-w-screen-xl lg:px-6">
+            <div class="content text-white text-left">
+                <div class="flex flex-col">
+                    <div class="counter-wrap text-[84px]" style="font-family: 'Sora';">
+                        <p class="counter" data-number="20" data-speed="2000"></p>
+                        <p>k+</p>
+                    </div>
+
+                    <div class="content text-white m-0 w-[75%]">
+                        <p>Happy customers worldwide</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="counter-wrap text-[84px]" style="font-family: 'Sora';">
+                        <p class="counter" data-number="12" data-speed="2000"></p>
+                        <p>+</p>
+                    </div>
+
+                    <div class=" content text-white m-0 w-[75%]">
+                        <p>Years of work experience</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="counter-wrap text-[84px] items-left" style="font-family: 'Sora';">
+                        <p class="counter" data-number="50" data-speed="2000"></p>
+                    </div>
+
+                    <div class=" content text-white m-0 w-[75%]">
+                        <p>Creativity & passionate members</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <div class="counter-wrap text-[84px]" style="font-family: 'Sora';">
+                        <p class="counter" data-number="200" data-speed="2000"></p>
+                        <p>+</p>
+                    </div>
+
+                    <div class=" content text-white m-0 w-[75%]">
+                        <p>Successfully finished projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========Carousel======== -->
+        <div class="px-4 mx-auto max-w-screen-xl lg:px-6">
+            <div class="about-us-divider"></div>
+            <div class="gap-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 lg:px-6">
+                <div class="text-white relative">
+                    <p class="mb-5 font-medium">Testimonials</p>
+                    <h2 class="text-[50px] font-semibold leading-[60px]" style=" font-family: 'Sora';">
+                        What our happy customers say
+                    </h2>
+                    <div class="flex gap-x-[8px] absolute bottom-[0px] left-[43px]">
+                        <div class="swiper-prev-btn">
+                            <img src="images/arrow left icon.svg">
+                        </div>
+                        <div class="swiper-next-btn">
+                            <img src="images/arrow left icon.svg" class="rotate-180">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 md:mt-0">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper relative ">
+                        <div class="swiper-wrapper">
+                            <!-- ==========1========= -->
+                            <div class="swiper-slide">
+                                <div class="mb-[25px] text-[24px] w-[95%] text-white" style="font-family: 'Sora';">
+                                    "I am thrilled to express my utmost satisfaction with the services provided by
+                                    Consultant company. Working with their team has been an absolute game-changer for my
+                                    business. Their insightful guidance and strategic approach have propelled us towards
+                                    success in ways we never thought possible. From restructuring our processes to
+                                    devising innovative marketing strategies"
+                                </div>
+                                <div class="flex justify-between items-end">
+                                    <div>
+                                        <p class="mb-[5px] font-bold text-white">
+                                            Brooklyn Simmons
+                                        </p>
+                                        <p class="text-[18px] text-white">
+                                            Client Manager
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-x-[5px]">
+                                        <img src="images/star icon.svg" alt="">
+                                        <img src="images/star icon.svg" alt="">
+                                        <img src="images/star icon.svg" alt="">
+                                        <img src="images/star icon.svg" alt="">
+                                        <img src="images/star icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- ==================HOW WE WORK==================== -->
+    <section class="pt-[130px] pb-[130px] bg-white dark:bg-white">
+        <div class="text-center ">
+            <p class="mb-5 font-medium">What we provide</p>
+            <h2 class="text-[50px] font-semibold leading-[60px]" style=" font-family: 'Sora';">How we work</h2>
+        </div>
+        <div
+            class="gap-8 items-center pt-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:pt-16 lg:px-6">
+
+            <div class="relative">
+                <img src="images/how-we-work.webp" class="w-[90%] h-[650px] object-cover">
+
+                <div
+                    class="border-[1px] border-solid border-[#d5dede] bg-[#d5dede4c] rounded-[10px] backdrop-blur-[20px] p-[30px] absolute top-auto -bottom-[20px] left-[20px] right-auto">
+                    <div class="clients-img-holder flex mb-5">
+                        <div class="w-[53px] h-[53px] rounded-[263px] border-2 border-solid border-white">
+                            <img src="images/clients image-1.webp" class="object-cover rounded-[263px] w-full h-full">
+                        </div>
+                        <div class="w-[53px] h-[53px] rounded-[263px] border-2 border-solid border-white -ml-5">
+                            <img src="images/clients image-2.webp" class="object-cover rounded-[263px] w-full h-full">
+                        </div>
+                        <div class="w-[53px] h-[53px] rounded-[263px] border-2 border-solid border-white -ml-5">
+                            <img src="images/clients image-3.webp" class="object-cover rounded-[263px] w-full h-full">
+                        </div>
+                        <div class="w-[53px] h-[53px] rounded-[263px] border-2 border-solid border-white -ml-5">
+                            <img src="images/clients image-4.webp" class="object-cover rounded-[263px] w-full h-full">
+                        </div>
+                        <div class="w-[53px] h-[53px] rounded-[263px] border-2 border-solid border-white -ml-5">
+                            <img src="images/clients image-5.webp" class="object-cover rounded-[263px] w-full h-full">
+                        </div>
+                    </div>
+                    <p class="text-white text-[18px] text-center">10k+ satisfied clients</p>
+                </div>
+            </div>
+
+            <div class="mt-4 md:mt-0">
+                <!-- ==============1=========== -->
+                <div class="mb-[50px]">
+                    <div
+                        class="w-[46px] h-[46px] border-[1px] border-solid border-[#d5dede] bg-[#d5dede4c] rounded-[10px] flex justify-center items-center mb-[24px] p-2">
+                        <img src="images/Preliminary Discussion.svg" class="w-[30px] h-[30px]">
+                    </div>
+                    <h3 class="mb-[10px] text-[#20282d] text-3xl font-semibold" style="font-family: 'Sora';">Preliminary
+                        Discussion</h3>
+                    <p class="text-[16px] w-[80%]">We start by arranging an introductory discussion to grasp your
+                        company's objectives and obstacles.</p>
+                </div>
+
+                <!-- ==============2=========== -->
+                <div class="mb-[50px]">
+                    <div
+                        class="w-[46px] h-[46px] border-[1px] border-solid border-[#d5dede] bg-[#d5dede4c] rounded-[10px] flex justify-center items-center mb-[24px] p-2">
+                        <img src="images/lightbulb icon.svg" class="w-[30px] h-[30px]">
+                    </div>
+                    <h3 class="mb-[10px] text-[#20282d] text-3xl font-semibold" style="font-family: 'Sora';">Exploration
+                        and Investigation</h3>
+                    <p class="text-[16px] w-[80%]">Our team engages in thorough research to collect essential insights
+                        regarding your sector, target audience, rivals, and ongoing marketing strategies.</p>
+                </div>
+
+                <!-- ==============3=========== -->
+                <div class="mb-[50px]">
+                    <div
+                        class="w-[46px] h-[46px] border-[1px] border-solid border-[#d5dede] bg-[#d5dede4c] rounded-[10px] flex justify-center items-center mb-[24px] p-2">
+                        <img src="images/database icon.svg" class="w-[30px] h-[30px]">
+                    </div>
+                    <h3 class="mb-[10px] text-[#20282d] text-3xl font-semibold" style="font-family: 'Sora';">Formulation
+                        of a Strategy</h3>
+                    <p class="text-[16px] w-[80%]">Drawing from the gathered insights, we craft marketing strategy that
+                        resonates with your business objectives.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================NEWS==================== -->
+    <section class="bg-[#fafafa] pt-[130px]">
+        <div class="pl-[19.5%] flex gap-x-[100px]">
+            <div class="">
+                <p class="mb-5 font-medium">News</p>
+                <h2 class="text-[50px] font-semibold leading-[60px] mb-[50px]" style=" font-family: 'Sora';">Our
+                    latest news</h2>
+                <button type="button"
+                    class="text-[#20282d] bg-[#2130351a] transition-all duration-[0.3s] py-5 px-10 text-lg hover:bg-[#20282d] hover:text-[#fff] focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full me-2 mb-2 dark:bg-gray-800 dark:hover:bg-#20282d dark:focus:ring-gray-700 dark:border-gray-700">View
+                    All</button>
+            </div>
+
+            <div class="w-full">
+                <div
+                    class=" w-full gap-x-[30px] border-b-[1.5px] border-solid border-[#21303533] flex justify-between flex-row">
+                    <!-- ===========1============== -->
+                    <div
+                        class="w-1/3 h-full border-b-[4px] border-solid border-white flex justify-between flex-col hover:border-b-[#20282d] hover:border-solid transition-colors duration-[0.3s]">
+                        <a href="#" class="flex justify-between flex-col items-start w-full h-full">
+                            <div class="w-full mb-5 text-[18px] font-medium">
+                                <div class="mb-5">
+                                    <img src="images/news-1.webp"
+                                        class="w-full h-[220px] cursor-pointer object-cover transition-transform duration-[0.3s] hover:scale-[0.98]">
+                                </div>
+                                <div class="mb-[10px]">
+                                    <p class="text-[24px] font-semibold leading-[28.8px] transition-colors duration-[0.3s] hover:text-[#213035b3]"
+                                        style="font-family: 'Sora';">
+                                        Effective workplace communication strategies</p>
+                                </div>
+                                <p class="mb-[50px] text-[16px]">
+                                    In the modern workplace, communication is the linchpin
+                                    that holds everything together. Effective communication can boost productivity,
+                                    foster collaboration.</p>
+                            </div>
+                            <div class="mb-[50px] transition-colors duration-[0.3s] hover:text-[#213035b3]">
+                                <a href="#" class="text-[18px] font-medium">Read More</a>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- ===========2============== -->
+                    <div
+                        class="w-1/3 h-full border-b-[4px] border-solid border-white flex justify-between flex-col hover:border-b-[#20282d] hover:border-solid transition-colors duration-[0.3s]">
+                        <a href="#" class="flex justify-between flex-col items-start w-full h-full ">
+                            <div class="w-full mb-5 text-[18px] font-medium">
+                                <div class="mb-5">
+                                    <img src="images/news-2.webp"
+                                        class="w-full h-[220px] cursor-pointer object-cover transition-transform duration-[0.3s] hover:scale-[0.98]">
+                                </div>
+                                <div class="mb-[10px]">
+                                    <p class="text-[24px] font-semibold leading-[28.8px] transition-colors duration-[0.3s] hover:text-[#213035b3]"
+                                        style="font-family: 'Sora';">
+                                        The critical role of strategic
+                                        planning in business
+                                    </p>
+                                </div>
+                                <p class="mb-[50px] text-[16px]">In the ever-evolving landscape of business,
+                                    success is not just about having a great idea; it's
+                                    about having a well-defined plan to turn that idea
+                                    into reality.</p>
+                            </div>
+
+                            <div class="mb-[50px] transition-colors duration-[0.3s] hover:text-[#213035b3]">
+                                <a href="#" class="text-[18px] font-medium">Read More</a>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- ===========3============== -->
+                    <div
+                        class="w-1/3 h-full border-b-[4px] border-solid border-white flex justify-between flex-col hover:border-b-[#20282d] hover:border-solid transition-colors duration-[0.3s]">
+                        <a href="#" class="flex justify-between flex-col items-start w-full h-full">
+                            <div class="w-full mb-5 text-[18px] font-medium">
+                                <div class="mb-5">
+                                    <img src="images/news-3.webp"
+                                        class="w-full h-[220px] cursor-pointer object-cover transition-transform duration-[0.3s] hover:scale-[0.98]">
+                                </div>
+                                <div class="mb-[10px]">
+                                    <p class="text-[24px] font-semibold leading-[28.8px] transition-colors duration-[0.3s] hover:text-[#213035b3]"
+                                        style="font-family: 'Sora';">
+                                        A guide to effective
+                                        leadership development
+                                    </p>
+                                </div>
+                                <p class="mb-[50px] text-[16px]">
+                                    Leadership is not just a title; its a skill that can be developed and refined over
+                                    time. Effective leadership is crucial for guiding organizations
+                                    toward success.
+                                </p>
+                            </div>
+                            <div class="mb-[50px] transition-colors duration-[0.3s] hover:text-[#213035b3]">
+                                <a href="#" class="text-[18px] font-medium">Read More</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================LETS GET IN TOUCH==================== -->
+    <footer class="pt-[150px] bg-[#fafafa] dark:bg-[#fafafa]">
+        <div class="items-center py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+
+            <h2 class="text-[50px] font-semibold leading-[60px] mb-[25px]" style=" font-family: 'Sora';">
+                Let's get in touch
+            </h2>
+
+            <div class="gap-8 xl:gap-[100px] md:grid md:grid-cols-2 pb-[100px] mb-[50px] section-divider">
+                <!-- ============col-6=============== -->
+                <div class="text-left">
+                    <p class="mb-5">
+                        If you possess any inquiries, queries, or are interested in conversing about how we can
+                        contribute to the expansion of your business, please feel free to contact us.
+                    </p>
+
+                    <form class="w-full h-full flex flex-col gap-y-[25px]">
+                        <div class="flex gap-x-[30px]">
+                            <input placeholder="First name" required />
+                            <input placeholder="Last name" required />
+                        </div>
+
+                        <div class="flex gap-x-[30px]">
+                            <input placeholder="Email" required />
+                            <input placeholder="Phone number" required />
+                        </div>
+
+                        <div>
+                            <select class="w-full" id="countries">
+                                <option selected>Interested in...</option>
+                                <option>Investment</option>
+                                <option>Tax Planning</option>
+                                <option>Education Planning</option>
+                            </select>
+
+                        </div>
+
+                        <div>
+                            <textarea class="w-full" cols="10" rows="3" placeholder="Message"></textarea>
+                        </div>
+
+                        <button type="button"
+                            class="text-[#20282d] bg-[#2130351a] font-normal transition-all duration-[0.3s] py-5 px-10 text-lg hover:bg-[#20282d] hover:text-[#fff] focus:outline-none focus:ring-4 focus:ring-gray-300 rounded-full me-2 mb-2 dark:bg-gray-800 dark:hover:bg-#20282d dark:focus:ring-gray-700 dark:border-gray-700">Submit</button>
+                    </form>
+
+                </div>
+
+                <!-- ============col-6=============== -->
+                <div>
+                    <h5 class="mb-5 text-[24px] font-semibold leading-[28.8px]" style="font-family: 'Sora';">
+                        Testimonials
+                    </h5>
+                    <div class="mb-[25px] text-[24px] w-[95%]" style="font-family: 'Sora';">
+                        "Collaborating with the Consultant has been truly invigorating. Their team consistently
+                        surpasses expectations, providing outstanding service and delivering remarkable outcomes. From
+                        conducting market research to executing marketing campaigns, they have exhibited a profound
+                        comprehension of our business and sector. Through their meticulousness, and strategic
+                        perspectives, they have played a pivotal role and realizing our business objectives."
+                    </div>
+                    <p class="mb-[5px] font-bold">
+                        Sarah Anderson
+                    </p>
+                    <p class="text-[18px]">
+                        Marketing Manager at ABC Corporation
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom flex justify-between items-center">
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank"
+                        class="text-[#20282d] bg-[#2130351a] transition-all duration-[0.3s] py-2.5 px-[30px] text-lg hover:bg-[#20282d] hover:text-[#fff] focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full me-2 mb-2 dark:bg-gray-800 dark:hover:bg-#20282d dark:focus:ring-gray-700 dark:border-gray-700">Instagram</a>
+
+                    <a href="https://www.facebook.com/" target="_blank"
+                        class="text-[#20282d] bg-[#2130351a] transition-all duration-[0.3s] py-2.5 px-[30px] text-lg hover:bg-[#20282d] hover:text-[#fff] focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full me-2 mb-2 dark:bg-gray-800 dark:hover:bg-#20282d dark:focus:ring-gray-700 dark:border-gray-700">Facebook</a>
+
+                    <a href="https://twitter.com/" target="_blank"
+                        class="text-[#20282d] bg-[#2130351a] transition-all duration-[0.3s] py-2.5 px-[30px] text-lg hover:bg-[#20282d] hover:text-[#fff] focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full me-2 mb-2 dark:bg-gray-800 dark:hover:bg-#20282d dark:focus:ring-gray-700 dark:border-gray-700">Twitter</a>
+
+                </div>
+
+                <div class="text-right flex flex-col">
+                    <div class="text-[16px] font-medium">
+                        © Consultant. All Rights Reserved 2023.
+                        <a href="#" class="hover:text-[#213035b3]">Lisencing</a>
+                    </div>
+                    <div class="text-[16px] font-medium leading-[22.4px]">
+                        <a href="#" class="hover:text-[#213035b3]">Webflow Templates</a>
+                        by
+                        <a href="#" class="hover:text-[#213035b3]">128.digital. </a>
+                        Powered by
+                        <a href="#" class="hover:text-[#213035b3]">Webflow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--===================COUNTER JS============== -->
+    <script>
+        let counter = document.querySelectorAll('.counter')
+        let arr = Array.from(counter)
+
+        arr.map((item) => {
+
+            let count = 0
+
+            function counterup() {
+                count++;
+                item.innerHTML = count;
+                console.log(count);
+                if (count == item.dataset.number) {
+                    clearInterval(stop)
+                }
+            }
+
+            let stop = setInterval(() => {
+                counterup()
+            }, item.dataset.speed / item.dataset.number)
+
+        })
+    </script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            effect: "fade",
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

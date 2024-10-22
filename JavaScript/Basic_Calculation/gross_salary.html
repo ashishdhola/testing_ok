@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross salary</title>
+</head>
+<body>
+    <h2>4. Write a javascript Program to find gross salary.(compulsory user input)
+        Ex. Base Salary: 100 RS, HRA=10%, DA=5%, TA=8%.</h2>
+</body>
+<script>
+    let s;
+
+    s = +prompt("Enter base salary :");
+
+    let hra,da,ta,total;
+    hra = 0.1*s;
+    da = 0.05*s;
+    ta = 0.08*s;
+    total = s + hra + da + ta ; 
+    
+    console.log("Gross Salary :",total);
+    
+</script>
+</html>

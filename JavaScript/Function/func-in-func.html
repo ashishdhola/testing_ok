@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function inside function</title>
+</head>
+
+<body>
+    <h2>function >> function</h2>
+    <script>
+        function sum(a, b) { // first function
+            console.log("sum :", a + b);
+
+            function mul(c, d) {  // second function
+                console.log("mul :", c * d);
+            }
+            mul(5, 2); // calling 2nd function
+        }
+        sum(8, 5); // calling 1st function
+
+
+    </script>
+</body>
+
+</html>

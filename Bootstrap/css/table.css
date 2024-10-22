@@ -1,0 +1,8 @@
+.avatar_wrap{
+    display: flex;
+}
+
+.a-1{
+    border-radius: 50%;
+    transition: all 0.5 ease;
+}

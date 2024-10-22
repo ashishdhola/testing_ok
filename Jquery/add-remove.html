@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: teal;
+        margin-bottom: 20px;
+    }
+
+    .append,
+    .prepend,
+    .empty,
+    .remove {
+        background-color: darksalmon;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <div class="box"></div>
+    <button class="append">APPEND</button>
+    <button class="prepend">PREPEND</button>
+    <button class="empty">EMPTY</button>
+    <button class="remove">REMOVE</button>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".append").click(function () {
+                $(".box").append("<div class='box'></div>");
+            });
+
+            $(".prepend").click(function () {
+                $(".box").prepend("<div class='box'></div>");
+            });
+
+            $(".empty").click(function () {
+                $(".box").empty("<div class='box'></div>");
+            });
+
+            $(".remove").click(function () {
+                $(".box").remove("<div class='box'></div>");
+            });
+        });
+    </script>
+</body>
+
+</html>

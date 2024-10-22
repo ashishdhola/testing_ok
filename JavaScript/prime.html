@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter number"));
+
+        for(i=0; i<=n; i++){
+            let flag = true;
+
+            for(j=2; j<i; j++){
+                if(i%j == 0){  //if this condition becomes true then the num is not prime i.e. it is composite num
+                    flag = false;
+                    break;
+                }
+            }
+            if(i>1 && flag == true){
+                console.log(i);
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+</head>
+
+<body>
+    <h1>Registeration</h1>
+
+    <label>Name:</label>
+    <input type="text" id="fname" name="fname" placeholder="First Name" required>
+    <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+    <br><br>
+
+    <b><label> Phone:</label></b>
+    <select>
+        <option>+91</option>
+        <option>+93</option>
+        <option>+355</option>
+        <option>+1</option>
+        <option>+244</option>
+
+    </select>
+    <input type="tel" pattern="[0-9]{10}">
+    <br> <br>
+
+    <b><label> Email:</label></b>
+    <input type="email" placeholder="example@gmail.com" />
+    <br> <br>
+
+    <b><label> Address:</label></b>
+    <textarea cols="20" rows="2" required></textarea>
+    <br> <br>
+
+    <b><label> Gender:</label></b>
+    <label>
+        <input type="radio" name="gender"> Male
+    </label>
+
+    <label>Female</label>
+    <input type="radio" name="gender">
+
+    <label>Other</label>
+    <input type="radio" name="gender">
+    <br> <br>
+
+    <b><label>Birthday:</label></b>
+    <input type="date">
+    <br> <br>
+
+    <b><label>Hobby:</label><br> <br></b>
+    <input type="checkbox">
+    <label>Sports</label>
+    <br> <br>
+    <input type="checkbox">
+    <label>Travelling</label>
+    <br> <br>
+    <input type="checkbox">
+    <label>Reading</label>
+    <br> <br>
+
+    <input type="checkbox">
+    <label>Music</label>
+    <br> <br>
+
+    <h3 id="output"></h3>
+    <button onclick="save()">Save</button>
+
+    <script>
+        function save() {
+            let fname = document.getElementById("fname").value;
+            document.getElementById("output").innerHTML = fname;
+        }
+    </script>
+
+</body>
+
+</html>

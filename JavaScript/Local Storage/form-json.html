@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-JSON</title>
+</head>
+
+<body>
+    <label for="username">Username</label>
+    <input type="text" id="username" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="number" id="phone" required>
+
+    <button onclick="submit()">Submit</button>
+
+    <script>
+        function submit() {
+            let username = document.getElementById("username").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+
+            let data = {  //object
+                username,
+                email,
+                phone
+            }
+
+            if (username != "" && email != "" && phone != "") {
+                let arr = JSON.parse(localStorage.getItem("info")) || [];
+                // let arr = [];
+                arr.push(data);
+                localStorage.setItem("info", JSON.stringify(arr));
+                // localStorage.setItem("info", arr);
+            }
+            else {
+                alert("Please fill all the fields");
+            }
+        }
+    </script>
+</body>
+
+</html>

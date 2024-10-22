@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0px auto;
+    }
+
+    .container {
+        max-width: 1320px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .box {
+        width: 100%;
+        margin-top: 50px;
+        color: aliceblue;
+    }
+
+    .slide-toggle {
+        background-color: goldenrod;
+        color: gainsboro;
+        border-radius: 20px 20px 0px 0px;
+        padding-left: 30px;
+    }
+
+    .box .toggle-para {
+        background-color: indianred;
+        color: gainsboro;
+        border-radius: 0px 0px 20px 20px;
+        padding-left: 30px;
+        display: none;
+    }
+    /* ==============slide up=============== */
+    .box-2 {
+        width: 100%;
+        margin-top: 50px;
+        color: aliceblue;
+    }
+
+    .slide-up {
+        background-color: goldenrod;
+        color: gainsboro;
+        border-radius: 20px 20px 0px 0px;
+        padding-left: 30px;
+    }
+
+    .box-2 .up-para {
+        background-color: indianred;
+        color: gainsboro;
+        border-radius: 0px 0px 20px 20px;
+        padding-left: 30px;
+        /* display: none; */
+    }
+    /* ==============slide down================= */
+    .box-3 {
+        width: 100%;
+        margin-top: 50px;
+        color: aliceblue;
+    }
+
+    .slide-down {
+        background-color: goldenrod;
+        color: gainsboro;
+        border-radius: 20px 20px 0px 0px;
+        padding-left: 30px;
+    }
+
+    .box-3 .down-para {
+        background-color: indianred;
+        color: gainsboro;
+        border-radius: 0px 0px 20px 20px;
+        padding-left: 30px;
+        display: none;
+    }
+
+    .box-4{
+        width: 100px;
+        height: 100px;
+        background-color: darkorange;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <h1 class="slide-toggle">SLIDE TOOGLE</h1>
+                <p class="toggle-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem autem unde facere illo recusandae eaque
+                    modi consequatur officiis ex saepe ullam, debitis, eveniet ab vitae veritatis nobis aspernatur atque
+                    perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum
+                    doloribus expedita cumque? Consectetur accusantium iste cupiditate eum earum rem officiis dicta
+                    totam cumque corporis distinctio ullam dolor, assumenda eius. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Id, a fugiat doloribus necessitatibus nulla nisi odit doloremque consequuntur
+                    iusto velit molestias aspernatur quibusdam! Culpa reprehenderit, maxime praesentium quibusdam nam
+                    vel?</p>
+            </div>
+
+            <div class="box-2">
+                <h1 class="slide-up">SLIDE UP</h1>
+                <p class="up-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem autem unde facere illo recusandae eaque
+                    modi consequatur officiis ex saepe ullam, debitis, eveniet ab vitae veritatis nobis aspernatur atque
+                    perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum
+                    doloribus expedita cumque? Consectetur accusantium iste cupiditate eum earum rem officiis dicta
+                    totam cumque corporis distinctio ullam dolor, assumenda eius. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Id, a fugiat doloribus necessitatibus nulla nisi odit doloremque consequuntur
+                    iusto velit molestias aspernatur quibusdam! Culpa reprehenderit, maxime praesentium quibusdam nam
+                    vel?</p>
+            </div>
+
+            <div class="box-3">
+                <h1 class="slide-down">SLIDE DOWN</h1>
+                <p class="down-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem autem unde facere illo recusandae eaque
+                    modi consequatur officiis ex saepe ullam, debitis, eveniet ab vitae veritatis nobis aspernatur atque
+                    perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum
+                    doloribus expedita cumque? Consectetur accusantium iste cupiditate eum earum rem officiis dicta
+                    totam cumque corporis distinctio ullam dolor, assumenda eius. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Id, a fugiat doloribus necessitatibus nulla nisi odit doloremque consequuntur
+                    iusto velit molestias aspernatur quibusdam! Culpa reprehenderit, maxime praesentium quibusdam nam
+                    vel?</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".slide-toggle").click(function () {
+                $(".toggle-para").slideToggle();
+            });
+
+            $(".slide-up").click(function () {
+                $(".up-para").slideUp();
+            });
+
+            $(".slide-down").click(function () {
+                $(".down-para").slideDown();
+            });
+        });
+    </script>
+</body>
+
+</html>

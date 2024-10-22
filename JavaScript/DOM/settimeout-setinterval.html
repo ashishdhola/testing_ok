@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="id"></div>
+    <button onclick="setTimeout(demo, 1000);">Press me</button>
+    <script>
+        // setTimeout
+        // setTimeout(() => {
+        //     console.log("hi - setTimeout");
+        //     document.write("hello world");
+        // }, 2000);
+
+        // // setInterval
+        // setInterval(()=>{
+        //     console.log("hii - setInterval - hii after 2sec ");
+        // },2000);
+
+        let abc = setTimeout(timeout,1000);
+        function timeout(){
+            document.getElementById("id").innerHTML = " setTimeout"
+        }
+
+        setInterval(interval, 1000);
+        function interval() {
+            document.getElementById("id").innerHTML += " setInterval ";
+        }
+
+        //When you remove the +, the assignment operator(=) takes effect. With each execution of the interval function, the entire content of the innerHTML property for the element with ID "id" is replaced with the string " setInterval ".
+        // This means the previous content of the element will be overwritten entirely every second.
+
+        // You'll only see the string " setInterval " displayed in the element, and it will not accumulate or repeat. Instead, it will keep refreshing every second.
+
+        // let count = 1;
+        // setInterval(() => {
+        //     console.log(count++);
+        //     // console.log("hello");
+        // }, 10000);
+
+        // /* ======================*/
+        // function demo() {
+        //     alert('Welcome to Javascript');
+        // }
+    </script>
+</body>
+
+</html>

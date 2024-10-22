@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    A common use of JSON is to exchange data to/from a web server.
+    When receiving data from a web server, the data is always a string.
+    Parse the data with JSON.parse(), and the data becomes a JavaScript object.
+
+    <h2>In JSON, string values must be written with double quotes:
+        In JavaScript, you can write string values with double or single quotes:
+    </h2>
+    <script>
+        let demo = {
+            username: "hjfgh",
+            age: 89
+        }
+        let ans = JSON.stringify(demo);
+        let obj = JSON.parse(ans);
+        console.log(obj);
+
+        localStorage.setItem("username", obj);
+        // console.log(`username is ${demo.username} `);
+
+    </script>
+</body>
+
+</html>
